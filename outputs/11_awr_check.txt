@@ -1,0 +1,15 @@
+
+NAME				    VALUE
+----------------------------------- --------------------
+control_management_pack_access	    DIAGNOSTIC+TUNING
+
+
+PL/SQL procedure successfully completed.
+
+
+   SNAP_ID BEGIN_INTERVAL_TIME
+---------- ---------------------------------------------------------------------------
+	 3 19-OCT-26 01.08.15.295 AM
+	 2 18-OCT-26 11.44.32.799 PM
+	 1 18-OCT-26 11.33.49.594 PM
+
