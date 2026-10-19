@@ -1,0 +1,27 @@
+
+Session altered.
+
+
+User created.
+
+
+Table created.
+
+
+Table created.
+
+
+TABLE_NAME	PARTITION INTERVAL
+--------------- --------- ------------------------------
+CDR_USAGE	RANGE	  NUMTODSINTERVAL(1,'DAY')
+
+
+TABLE_NAME	PARTITION_NAME
+--------------- ---------------
+CDR_USAGE	P_INIT
+
+
+TABLE_NAME	INDEX_NAME		       INDEX_TYPE
+--------------- ------------------------------ ---------------------------
+SUBSCRIBER	SYS_C008652		       NORMAL
+

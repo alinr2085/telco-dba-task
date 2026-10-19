@@ -1,0 +1,15 @@
+
+System altered.
+
+
+NAME
+--------------------------------------------------------------------------------
+/opt/oracle/oradata/fra/FREE/archivelog/2026_10_18/o1_mf_1_5_ofbqbwwd_.arc
+/opt/oracle/oradata/fra/FREE/archivelog/2026_10_18/o1_mf_1_4_ofbq4vpr_.arc
+/opt/oracle/oradata/fra/FREE/archivelog/2026_10_18/o1_mf_1_3_ofbq4von_.arc
+
+
+NAME										 SPACE_LIMIT SPACE_USED SPACE_RECLAIMABLE NUMBER_OF_FILES     CON_ID
+-------------------------------------------------------------------------------- ----------- ---------- ----------------- --------------- ----------
+/opt/oracle/oradata/fra 							  8589934592   23118336 		0		4	   0
+

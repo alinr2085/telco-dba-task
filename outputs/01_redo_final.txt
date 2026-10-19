@@ -1,0 +1,23 @@
+
+Database altered.
+
+
+Database altered.
+
+
+Database altered.
+
+
+    GROUP#	   MB	 MEMBERS STATUS 	  ARC
+---------- ---------- ---------- ---------------- ---
+	 4	   50	       1 INACTIVE	  YES
+	 5	   50	       1 CURRENT	  NO
+	 6	   50	       1 UNUSED 	  YES
+
+
+    GROUP# MEMBER
+---------- --------------------------------------------------
+	 4 /opt/oracle/oradata/FREE/redo04.log
+	 5 /opt/oracle/oradata/FREE/redo05.log
+	 6 /opt/oracle/oradata/FREE/redo06.log
+
