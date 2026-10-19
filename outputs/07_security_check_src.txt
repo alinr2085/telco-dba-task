@@ -1,0 +1,34 @@
+
+Session altered.
+
+=== Open accounts
+
+USERNAME		       ACCOUNT_STATUS	    PROFILE
+------------------------------ -------------------- --------------------
+PDBADMIN		       OPEN		    DEFAULT
+SYS			       OPEN		    DEFAULT
+SYSRAC			       OPEN		    DEFAULT
+SYSTEM			       OPEN		    DEFAULT
+TELCO			       OPEN		    DEFAULT
+
+=== DEFAULT profile limits
+
+PROFILE 	     RESOURCE_NAME	       LIMIT
+-------------------- ------------------------- --------------------
+DEFAULT 	     FAILED_LOGIN_ATTEMPTS     10
+DEFAULT 	     PASSWORD_LIFE_TIME        180
+DEFAULT 	     PASSWORD_LOCK_TIME        1
+
+=== Enabled audit policies
+
+POLICY_NAME		       ENABLED_OPTION
+------------------------------ --------------------
+ORA_SECURECONFIG	       BY USER
+ORA_LOGIN_LOGOUT	       BY USER
+ORA$DICTIONARY_SENS_COL_ACCESS BY USER
+ORA$DICTIONARY_SNET_RPC_ACCESS BY USER
+ORA_DV_SCHEMA_CHANGES	       BY USER
+ORA_DV_DEFAULT_PROTECTION      BY USER
+
+6 rows selected.
+

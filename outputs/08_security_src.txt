@@ -1,0 +1,45 @@
+
+Session altered.
+
+
+Profile created.
+
+
+User altered.
+
+alter user sysrac   account lock
+*
+ERROR at line 1:
+ORA-28222: Operations cannot be performed on Oracle reserved user or role
+"SYSRAC".
+Help: https://docs.oracle.com/error-help/db/ora-28222/
+
+
+
+User altered.
+
+
+Audit succeeded.
+
+
+USERNAME	     ACCOUNT_STATUS
+-------------------- --------------------
+PDBADMIN	     LOCKED
+SYS		     OPEN
+SYSRAC		     OPEN
+SYSTEM		     LOCKED
+TELCO		     OPEN
+
+
+PROFILE 	     RESOURCE_NAME	       LIMIT
+-------------------- ------------------------- ---------------
+APP_PROFILE	     FAILED_LOGIN_ATTEMPTS     5
+APP_PROFILE	     PASSWORD_LIFE_TIME        90
+APP_PROFILE	     PASSWORD_LOCK_TIME        .0416
+
+
+POLICY_NAME		  ENABLED_OPTION  SUC FAI
+------------------------- --------------- --- ---
+ORA_LOGIN_LOGOUT	  BY USER	  NO  YES
+ORA_LOGON_FAILURES	  BY USER	  NO  YES
+

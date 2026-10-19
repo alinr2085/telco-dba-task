@@ -1,0 +1,19 @@
+
+Session altered.
+
+BEGIN dbms_audit_mgmt.flush_unified_audit_trail; END;
+
+                      *
+ERROR at line 1:
+ORA-06550: line 1, column 23:
+PLS-00302: component 'FLUSH_UNIFIED_AUDIT_TRAIL' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+Help: https://docs.oracle.com/error-help/db/ora-06550/
+
+
+
+EVENT_TIMESTAMP 							    DBUSERNAME	    ACTION_NAM RETURN_CODE
+--------------------------------------------------------------------------- --------------- ---------- -----------
+19-OCT-26 01.52.28.836338 AM						    FAKEUSER	    LOGON	      1017
+
