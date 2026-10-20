@@ -1,0 +1,90 @@
+== Snapshot header
+ Begin Snap: 14 20-Oct-26 01:51:35 16 1.2 
+ End Snap: 15 20-Oct-26 02:51:36 16 1.2 
+ Elapsed: &#160; 60.01 (mins) &#160; &#160; 
+ DB Time: &#160; 50.55 (mins) &#160; &#160; 
+ Finding Name Avg active sessions of the task Percent active sessions of finding Task Name Begin Snap Time End Snap Time 
+ A blank in the 'End Snapshot' indicates the same value as the 'Begin Snapshot' 
+== ADDM findings
+ Top ADDM Findings by Average Active Sessions 
+ Finding Name Avg active sessions of the task Percent active sessions of finding Task Name Begin Snap Time End Snap Time 
+ Top SQL Statements .84 66.81 ADDM:3457782515_1_15 20-Oct-26 01:51 20-Oct-26 02:51 
+ PL/SQL Execution .84 31.06 ADDM:3457782515_1_15 20-Oct-26 01:51 20-Oct-26 02:51 
+ Soft Parse .84 2.96 ADDM:3457782515_1_15 20-Oct-26 01:51 20-Oct-26 02:51 
+ Load Profile 
+ Per Second Per Transaction Per Exec Per Call 
+ DB Time(s): 0.8 0.0 0.00 116.64 
+ DB CPU(s): 0.8 0.0 0.00 116.57 
+ Background CPU(s): 0.0 0.0 0.00 0.00 
+ Redo size (bytes): 403,041.0 834.8 &#160; &#160; 
+ Logical read (blocks): 59,822.1 123.9 &#160; &#160; 
+== Top 10 Foreground Events
+ Top 10 Foreground Events by Total Wait Time 
+ Event Waits Total Wait Time (sec) Avg Wait % DB time Wait Class 
+ DB CPU &#160; 3030.7 &#160; 99.9 &#160; 
+ log file switch (private strand flush incomplete) 225 6.2 27.71ms .2 Configuration 
+ library cache: mutex X 3,462 4.2 1.21ms .1 Concurrency 
+ buffer busy waits 4,775 1.2 244.69us .0 Concurrency 
+ log file switch (checkpoint incomplete) 51 .4 7.32ms .0 Configuration 
+ db file sequential read 235 .4 1.53ms .0 User I/O 
+ cursor: pin S 292 .4 1.22ms .0 Concurrency 
+ resmgr:cpu quantum 22 .2 9.68ms .0 Scheduler 
+ resmgr:internal state change 2 .2 100.31ms .0 Concurrency 
+ library cache: bucket mutex X 96 .2 1.79ms .0 Concurrency 
+ Wait Classes by Total Wait Time 
+== Load Profile
+ Load Profile 
+ Per Second Per Transaction Per Exec Per Call 
+ DB Time(s): 0.8 0.0 0.00 116.64 
+ DB CPU(s): 0.8 0.0 0.00 116.57 
+ Background CPU(s): 0.0 0.0 0.00 0.00 
+ Redo size (bytes): 403,041.0 834.8 &#160; &#160; 
+ Logical read (blocks): 59,822.1 123.9 &#160; &#160; 
+ Block changes: 2,865.9 5.9 &#160; &#160; 
+ Physical read (blocks): 0.2 0.0 &#160; &#160; 
+ Physical write (blocks): 0.2 0.0 &#160; &#160; 
+ Read IO requests: 0.1 0.0 &#160; &#160; 
+ Write IO requests: 0.0 0.0 &#160; &#160; 
+ Read IO (MB): 0.0 0.0 &#160; &#160; 
+ Write IO (MB): 0.0 0.0 &#160; &#160; 
+ IM scan rows: 0.0 0.0 &#160; &#160; 
+ Session Logical Read IM: 0.0 0.0 &#160; &#160; 
+ User calls: 0.0 0.0 &#160; &#160; 
+ Parses (SQL): 534.0 1.1 &#160; &#160; 
+ Hard parses (SQL): 0.1 0.0 &#160; &#160; 
+ SQL Work Area (MB): 0.1 0.0 &#160; &#160; 
+ Logons: 0.0 0.0 &#160; &#160; 
+ User logons: 0.0 0.0 &#160; &#160; 
+ Executes (SQL): 1,389.7 2.9 &#160; &#160; 
+ Rollbacks: 0.0 0.0 &#160; &#160; 
+ Transactions: 482.8 &#160; &#160; &#160; 
+ Top 10 Foreground Events by Total Wait Time 
+ Event Waits Total Wait Time (sec) Avg Wait % DB time Wait Class 
+ DB CPU &#160; 3030.7 &#160; 99.9 &#160; 
+ log file switch (private strand flush incomplete) 225 6.2 27.71ms .2 Configuration 
+ library cache: mutex X 3,462 4.2 1.21ms .1 Concurrency 
+== SQL ordered by Elapsed Time
+ SQL ordered by Elapsed Time 
+ SQL ordered by CPU Time 
+ SQL ordered by Elapsed Time&#160;&#160; [1] 
+ Resources reported for PL/SQL code includes the resources used by all SQL statements called by the code. 
+ % Total DB Time is the Elapsed Time of the SQL statement divided into the Total Database Time multiplied by 100 
+ %Total - Elapsed Time as a percentage of Total DB time 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Captured SQL account for 40.9% of Total DB Time (s): 3,033 
+ Captured PL/SQL account for 79.9% of Total DB Time (s): 3,033 
+ Elapsed Time (s) Executions Elapsed Time per Exec (s) %Total %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 912.73 36,007 0.03 30.10 91.86 0.00 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 166.11 0 &#160; 5.48 127.94 0.00 91zcj4r176vm7 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 165.93 0 &#160; 5.47 128.39 0.00 arccu27prjb3n 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 165.86 0 &#160; 5.47 128.94 0.00 07twhwbt2qcjb 

@@ -1,0 +1,18 @@
+
+Session altered.
+
+== BEFORE
+
+NAME		     VALUE
+-------------------- ----------
+cursor_sharing	     EXACT
+
+
+System altered.
+
+== AFTER
+
+NAME		     VALUE
+-------------------- ----------
+cursor_sharing	     FORCE
+

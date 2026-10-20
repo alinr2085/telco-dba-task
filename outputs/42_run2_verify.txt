@@ -1,0 +1,21 @@
+
+Session altered.
+
+State	     : FINISHED
+Planned end  : 2026-10-20 01:35:25
+Time left    : 0 min 0 s
+Run 1 FINISHED (started 2026-10-20 00:30:25)
+target_tps=500 sessions_reporting=16 of 16 duration=3900s
+elapsed=4403s total=1261631 avg_tps=286.5
+record_call=1087541 record_rejected=22343 rating_adjust=126619 balance_check=25128 errors=0
+
+PL/SQL procedure successfully completed.
+
+
+    CON_ID    SNAP_ID END_TIME
+---------- ---------- ---------------------------------------------------------------------------
+	 0	   10 10-20 00:00:11
+	 3	   12 10-20 00:00:11
+	 3	   13 10-20 00:43:56
+	 0	   11 10-20 01:00:13
+

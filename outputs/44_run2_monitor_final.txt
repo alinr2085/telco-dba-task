@@ -1,0 +1,14 @@
+
+Session altered.
+
+State	     : FINISHED
+Planned end  : 2026-10-20 02:52:55
+Time left    : 0 min 0 s
+Run 1 FINISHED (started 2026-10-20 01:47:55)
+target_tps=500 sessions_reporting=16 of 16 duration=3900s
+elapsed=3900s total=1949991 avg_tps=500
+record_call=1680270 record_rejected=34547 rating_adjust=196170
+balance_check=39004 errors=0
+
+PL/SQL procedure successfully completed.
+
