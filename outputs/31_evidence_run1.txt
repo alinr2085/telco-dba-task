@@ -1,0 +1,20 @@
+
+Session altered.
+
+== 1) sequence
+
+SEQUENCE_NAME	CACHE_SIZE O
+--------------- ---------- -
+CDR_SEQ 	      1000 N
+
+== 2) top SQL: text and plan
+
+PLAN_TABLE_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL_ID: 1ppfr2kwym0kf cannot be found
+
+
+== 3) literal SQL groups
+
+no rows selected
+

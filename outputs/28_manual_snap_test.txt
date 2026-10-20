@@ -1,0 +1,34 @@
+== ساخت در root
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+== ساخت در PDB
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+== دیدن از root
+
+Session altered.
+
+
+    CON_ID    SNAP_ID END_INTERVAL_TIME
+---------- ---------- ----------------------------
+	 0	    9 19-OCT-26 10.35.54.260 PM
+	 3	   11 19-OCT-26 10.35.56.413 PM
+
+== دیدن از PDB
+
+Session altered.
+
+
+    CON_ID    SNAP_ID END_INTERVAL_TIME
+---------- ---------- ----------------------------
+	 0	    9 19-OCT-26 10.35.54.260 PM
+	 3	   11 19-OCT-26 10.35.56.413 PM
+

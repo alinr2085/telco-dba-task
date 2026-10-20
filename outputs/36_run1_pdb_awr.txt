@@ -1,0 +1,2242 @@
+ AWR Report for DB: FREE, Inst: FREE, Snaps: 7-9 
+body.awr {font:bold 10pt Arial,Helvetica,Geneva,sans-serif;color:black; background:White;}
+pre.awr {font:8pt Courier;color:black; background:White;}
+pre_sqltext.awr {white-space: pre-wrap;}
+h1.awr {font:bold 20pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;border-bottom:1px solid #cccc99;margin-top:0pt; margin-bottom:0pt;padding:0px 0px 0px 0px;}
+h2.awr {font:bold 18pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;margin-top:4pt; margin-bottom:0pt;}
+h3.awr {font:bold 16pt Arial,Helvetica,Geneva,sans-serif;color:#336699;background-color:White;margin-top:4pt; margin-bottom:0pt;}
+li.awr {font: 8pt Arial,Helvetica,Geneva,sans-serif; color:black; background:White;}
+th.awrnobg {font:bold 8pt Arial,Helvetica,Geneva,sans-serif; color:black; background:White;padding-left:4px; padding-right:4px;padding-bottom:2px}
+th.awrbg {font:bold 8pt Arial,Helvetica,Geneva,sans-serif; color:White; background:#0066CC;padding-left:4px; padding-right:4px;padding-bottom:2px}
+td.awrnc {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;}
+td.awrc {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;}
+td.awrnclb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;}
+td.awrncbb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;border-right: thin solid black;}
+td.awrncrb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-right: thin solid black;}
+td.awrcrb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-right: thin solid black;}
+td.awrclb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-left: thin solid black;}
+td.awrcbb {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-left: thin solid black;border-right: thin solid black;}
+a.awr {font:bold 8pt Arial,Helvetica,sans-serif;color:#663300; vertical-align:top;margin-top:0pt; margin-bottom:0pt;}
+td.awrnct {font:8pt Arial,Helvetica,Geneva,sans-serif;border-top: thin solid black;color:black;background:White;vertical-align:top;}
+td.awrct {font:8pt Arial,Helvetica,Geneva,sans-serif;border-top: thin solid black;color:black;background:#FFFFCC; vertical-align:top;}
+td.awrnclbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-top: thin solid black;border-left: thin solid black;}
+td.awrncbbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-left: thin solid black;border-right: thin solid black;border-top: thin solid black;}
+td.awrncrbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:White;vertical-align:top;border-top: thin solid black;border-right: thin solid black;}
+td.awrcrbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-right: thin solid black;}
+td.awrclbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-left: thin solid black;}
+td.awrcbbt {font:8pt Arial,Helvetica,Geneva,sans-serif;color:black;background:#FFFFCC; vertical-align:top;border-top: thin solid black;border-left: thin solid black;border-right: thin solid black;}
+td.awrcnot {background-color:#eac05c;}
+td.awrcwrn {background-color:#efa17d;}
+td.awrccrt {background-color:#b50d20;color:white;}
+table.tdiff { border_collapse: collapse; }
+table.tscl {width: 600;}
+table.tscl tbody, table.tscl thead { display: block; }
+table.tscl thead tr th {height: 12px;line-height: 12px;}
+table.tscl tbody { height: 100px;overflow-y: auto; overflow-x: hidden;}
+table.tscl tbody td, thead th {width: 200;}
+.hidden {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+.pad {margin-left:17px;}
+.doublepad {margin-left:34px;}
+WORKLOAD REPOSITORY PDB report (PDB snapshots)
+ DB Name DB Id Unique Name Role Edition Release RAC CDB 
+ FREE 3457782515 FREE PRIMARY FREE 23.26.3.0.0 NO YES 
+ Instance Inst Num Startup Time User Name System Data Visible 
+ FREE 1 18-Oct-26 23:33 SYS YES 
+ Container DB Id Container Name Open Time 
+ 3457782515 FREEPDB1 18-Oct-26 23:33 
+ Host Name Platform CPUs Cores Sockets Memory (GB) 
+ 8512df493b78 Linux x86 64-bit 4 2 1 10.70 
+ Snap Id Snap Time Sessions Cursors/Session 
+ Begin Snap: 7 19-Oct-26 16:05:05 16 2.1 
+ End Snap: 9 19-Oct-26 17:05:39 16 2.1 
+ Elapsed: &#160; 60.57 (mins) &#160; &#160; 
+ DB Time: &#160; 80.72 (mins) &#160; &#160; 
+ Report Summary 
+ Top ADDM Findings by Average Active Sessions 
+ Finding Name Avg active sessions of the task Percent active sessions of finding Task Name Begin Snap Time End Snap Time 
+ Top SQL Statements 2.06 53.12 ADDM:3457782515_1_9 19-Oct-26 17:00 19-Oct-26 17:05 
+ PL/SQL Execution 2.06 40.62 ADDM:3457782515_1_9 19-Oct-26 17:00 19-Oct-26 17:05 
+ Top SQL Statements 1.27 46.03 ADDM:3457782515_1_8 19-Oct-26 16:05 19-Oct-26 17:00 
+ Resource Manager CPU Throttling 2.06 19.76 ADDM:3457782515_1_9 19-Oct-26 17:00 19-Oct-26 17:05 
+ PL/SQL Execution 1.27 27.30 ADDM:3457782515_1_8 19-Oct-26 16:05 19-Oct-26 17:00 
+ Load Profile 
+ Per Second Per Transaction Per Exec Per Call 
+ DB Time(s): 1.3 0.0 0.00 142.45 
+ DB CPU(s): 1.3 0.0 0.00 137.78 
+ Background CPU(s): 0.0 0.0 0.00 0.00 
+ Redo size (bytes): 403,223.5 835.2 &#160; &#160; 
+ Logical read (blocks): 61,593.4 127.6 &#160; &#160; 
+ Block changes: 2,865.5 5.9 &#160; &#160; 
+ Physical read (blocks): 0.4 0.0 &#160; &#160; 
+ Physical write (blocks): 0.2 0.0 &#160; &#160; 
+ Read IO requests: 0.4 0.0 &#160; &#160; 
+ Write IO requests: 0.0 0.0 &#160; &#160; 
+ Read IO (MB): 0.0 0.0 &#160; &#160; 
+ Write IO (MB): 0.0 0.0 &#160; &#160; 
+ IM scan rows: 0.0 0.0 &#160; &#160; 
+ Session Logical Read IM: 0.0 0.0 &#160; &#160; 
+ User calls: 0.0 0.0 &#160; &#160; 
+ Parses (SQL): 552.9 1.2 &#160; &#160; 
+ Hard parses (SQL): 269.4 0.6 &#160; &#160; 
+ SQL Work Area (MB): 0.2 0.0 &#160; &#160; 
+ Logons: 0.0 0.0 &#160; &#160; 
+ User logons: 0.0 0.0 &#160; &#160; 
+ Executes (SQL): 1,428.8 3.0 &#160; &#160; 
+ Rollbacks: 0.0 0.0 &#160; &#160; 
+ Transactions: 482.8 &#160; &#160; &#160; 
+ Top 10 Foreground Events by Total Wait Time 
+ Event Waits Total Wait Time (sec) Avg Wait % DB time Wait Class 
+ DB CPU &#160; 4684.6 &#160; 96.7 &#160; 
+ resmgr:cpu quantum 2,100 150.1 71.49ms 3.1 Scheduler 
+ latch: shared pool 178,205 42.8 240.44us .9 Concurrency 
+ row cache mutex 26,924 16 594.38us .3 Concurrency 
+ cursor: pin S wait on X 708 15.1 21.35ms .3 Concurrency 
+ library cache: mutex X 26,874 11 407.65us .2 Concurrency 
+ log file switch (private strand flush incomplete) 397 9.1 23.03ms .2 Configuration 
+ buffer busy waits 6,442 3.3 514.31us .1 Concurrency 
+ db file sequential read 1,370 3.1 2.28ms .1 User I/O 
+ enq: HW - contention 26 1.8 69.72ms .0 Configuration 
+ Wait Classes by Total Wait Time 
+ Wait Class Waits Total Wait Time (sec) Avg Wait Time % DB time Avg Active Sessions 
+ DB CPU &#160; 4,685 &#160; 96.7 1.3 
+ Scheduler 2,148 155 72.10ms 3.2 0.0 
+ Concurrency 242,639 92 380.04us 1.9 0.0 
+ Configuration 461 12 25.95ms .2 0.0 
+ User I/O 1,747 4 2.23ms .1 0.0 
+ Other 5,512 3 593.27us .1 0.0 
+ Commit 42 0 4.77ms .0 0.0 
+ System I/O 207 0 283.23us .0 0.0 
+ Network 10 0 4.20us .0 0.0 
+ IO Profile 
+ Read+Write Per Second Read per Second Write Per Second 
+ Total Requests: 0.5 0.4 0.1 
+ Database Requests: 0.4 0.4 0.0 
+ Optimized Requests: 0.0 0.0 0.0 
+ Redo Requests: &#160; &#160; &#160; 
+ Total (MB): 0.0 0.0 0.0 
+ Database (MB): 0.0 0.0 0.0 
+ Optimized Total (MB): 0.0 0.0 0.0 
+ Redo (MB): &#160; &#160; &#160; 
+ Database (blocks): 0.6 0.4 0.2 
+ Via Buffer Cache (blocks): 0.4 0.4 0.0 
+ Direct (blocks): 0.2 0.0 0.2 
+Database Resource Limits
+ Begin End 
+ CPUs: 2 2 
+ SGA Target: 0 0 
+ PGA Target: 536,870,912 536,870,912 
+ Memory Target 0 0 
+Main Report
+ Report Summary 
+ Wait Events Statistics 
+ SQL Statistics 
+ Instance Activity Statistics 
+ IO Stats 
+ Wait Statistics 
+ Undo Statistics 
+ Segment Statistics 
+ Dictionary Cache Statistics 
+ Library Cache Statistics 
+ Replication Statistics (GoldenGate, XStream) 
+ Initialization Parameters 
+ Active Session History (ASH) Report 
+ ADDM Reports 
+ Report Footnotes 
+ Back to Top 
+Wait Events Statistics
+ Time Model Statistics 
+ Foreground Wait Class 
+ Foreground Wait Events 
+ Top Process Types by Wait Class 
+ Top Process Types by CPU Used 
+ Back to Top 
+ Time Model Statistics 
+ DB Time represents total time in user calls 
+ DB CPU represents CPU time of foreground processes 
+ Total CPU Time represents foreground and background processes 
+ Statistics including the word "background" measure background process
+ time, therefore do not contribute to the DB time statistic 
+ Ordered by % of DB time in descending order, followed by Statistic Name 
+ Statistic Name Time (s) % of DB Time % of Total CPU Time 
+ DB CPU 4,684.56 96.72 100.00 
+ sql execute elapsed time&#160;&#160; [1] 4,330.79 89.42 &#160; 
+ parse time elapsed&#160;&#160; [1] 1,380.32 28.50 &#160; 
+ PL/SQL execution elapsed time&#160;&#160; [1] 1,313.54 27.12 &#160; 
+ hard parse elapsed time&#160;&#160; [1] 1,099.93 22.71 &#160; 
+ hard parse (sharing criteria) elapsed time&#160;&#160; [1] 0.48 0.01 &#160; 
+ PL/SQL compilation elapsed time&#160;&#160; [1] 0.37 0.01 &#160; 
+ repeated bind elapsed time&#160;&#160; [1] 0.06 0.00 &#160; 
+ failed parse elapsed time&#160;&#160; [1] 0.04 0.00 &#160; 
+ connection management call elapsed time&#160;&#160; [1] 0.00 0.00 &#160; 
+ DB time 4,843.34 &#160; &#160; 
+ total CPU time 4,684.56 &#160; &#160; 
+ Back to Wait Events Statistics 
+ Back to Top 
+ Foreground Wait Class 
+ s - second, ms - millisecond, us - microsecond, ns - nanosecond 
+ ordered by wait time desc, waits desc 
+ %Timeouts: value of 0 indicates value was &lt; .5%. Value of null is truly 0 
+ Captured Time accounts for 102.1% of Total DB time 4,843.34 (s) 
+ Total FG Wait Time: 259.42 (s) DB CPU time: 4,684.56 (s) 
+ Wait Class Waits %Time -outs Total Wait Time (s) Avg wait %DB time 
+ DB CPU &#160; &#160; 4,685 &#160; 96.72 
+ Scheduler 2,100 0 150 71.49ms 3.10 
+ Concurrency 241,849 0 91 378.19us 1.89 
+ Configuration 460 0 12 26.00ms 0.25 
+ User I/O 1,588 0 4 2.39ms 0.08 
+ Other 4,057 0 2 503.00us 0.04 
+ System I/O 120 0 0 219.93us 0.00 
+ Network 10 0 0 4.20us 0.00 
+ Commit 0 &#160; 0 &#160; 0.00 
+ Back to Wait Events Statistics 
+ Back to Top 
+ Foreground Wait Events 
+ s - second, ms - millisecond, us - microsecond, ns - nanosecond 
+ Only events with Total Wait Time (s) &gt;= .001 are shown 
+ ordered by wait time desc, waits desc (idle events last) 
+ %Timeouts: value of 0 indicates value was &lt; .5%. Value of null is truly 0 
+ Event Waits %Time -outs Total Wait Time (s) Avg wait Waits /txn % DB time 
+ resmgr:cpu quantum 2,100 &#160; 150 71.49ms 0.00 3.10 
+ latch: shared pool 178,205 &#160; 43 240.44us 0.10 0.88 
+ row cache mutex 26,924 &#160; 16 594.38us 0.02 0.33 
+ cursor: pin S wait on X 708 &#160; 15 21.35ms 0.00 0.31 
+ library cache: mutex X 26,874 &#160; 11 407.65us 0.02 0.23 
+ log file switch (private strand flush incomplete) 397 &#160; 9 23.03ms 0.00 0.19 
+ buffer busy waits 6,442 &#160; 3 514.31us 0.00 0.07 
+ db file sequential read 1,370 &#160; 3 2.28ms 0.00 0.06 
+ enq: HW - contention 26 &#160; 2 69.72ms 0.00 0.04 
+ library cache: bucket mutex X 289 &#160; 1 4.33ms 0.00 0.03 
+ enq: TX - contention 38 &#160; 1 21.88ms 0.00 0.02 
+ sequence cache replenishment 771 &#160; 1 1.03ms 0.00 0.02 
+ log file switch completion 20 &#160; 1 32.44ms 0.00 0.01 
+ direct path write 62 &#160; 0 7.75ms 0.00 0.01 
+ kksfbc child completion 9 100 0 50.15ms 0.00 0.01 
+ log file switch (checkpoint incomplete) 16 &#160; 0 21.80ms 0.00 0.01 
+ resmgr:internal state change 3 100 0 100.26ms 0.00 0.01 
+ latch: In memory undo latch 517 &#160; 0 579.20us 0.00 0.01 
+ row cache lock 780 &#160; 0 324.36us 0.00 0.01 
+ latch free 255 &#160; 0 725.49us 0.00 0.00 
+ enq: CR - block range reuse ckpt 48 &#160; 0 3.81ms 0.00 0.00 
+ cursor: pin S 124 &#160; 0 1.47ms 0.00 0.00 
+ latch: redo allocation 200 &#160; 0 645.39us 0.00 0.00 
+ latch: enqueue hash chains 247 &#160; 0 495.89us 0.00 0.00 
+ latch: cache buffers chains 163 &#160; 0 737.29us 0.00 0.00 
+ direct path sync 4 &#160; 0 23.08ms 0.00 0.00 
+ Data file init write 88 &#160; 0 778.90us 0.00 0.00 
+ control file parallel write 12 &#160; 0 2.14ms 0.00 0.00 
+ Allocate UGA memory from OS 1,256 &#160; 0 20.38us 0.00 0.00 
+ Disk file operations I/O 54 &#160; 0 411.85us 0.00 0.00 
+ latch: undo global data 32 &#160; 0 643.59us 0.00 0.00 
+ reliable message 52 &#160; 0 345.83us 0.00 0.00 
+ Allocate CGA memory from OS 1,196 &#160; 0 13.91us 0.00 0.00 
+ enq: FB - contention 11 &#160; 0 1.34ms 0.00 0.00 
+ library cache load lock 13 &#160; 0 1.08ms 0.00 0.00 
+ library cache: dependency mutex X 9 &#160; 0 1.18ms 0.00 0.00 
+ latch: cache buffers lru chain 15 &#160; 0 641.73us 0.00 0.00 
+ Free private memory to OS 60 &#160; 0 134.82us 0.00 0.00 
+ latch: messages 10 &#160; 0 790.60us 0.00 0.00 
+ row cache read 23 &#160; 0 242.17us 0.00 0.00 
+ DLM cross inst call completion 4 &#160; 0 1.39ms 0.00 0.00 
+ latch: redo copy 1 &#160; 0 5.57ms 0.00 0.00 
+ db file scattered read 3 &#160; 0 1.76ms 0.00 0.00 
+ wait list latch free 4 &#160; 0 1.13ms 0.00 0.00 
+ db file single write 4 &#160; 0 923.75us 0.00 0.00 
+ Allocate PGA memory from OS 585 &#160; 0 5.27us 0.00 0.00 
+ library cache lock 4 &#160; 0 678.00us 0.00 0.00 
+ db file parallel read 1 &#160; 0 1.20ms 0.00 0.00 
+ rdbms ipc reply 4 &#160; 0 290.00us 0.00 0.00 
+ latch: object queue header operation 1 &#160; 0 1.08ms 0.00 0.00 
+ PL/SQL lock timer 391,816,999 100 53,680 137.00us 223.31 &#160; 
+ SQL*Net message from client 10 &#160; 0 628.20us 0.00 &#160; 
+ Back to Wait Events Statistics 
+ Back to Top 
+ Top Process Types by Wait Class 
+ No data exists for this section of the report.
+ Back to Wait Events Statistics 
+ Back to Top 
+ Top Process Types by CPU Used 
+ No data exists for this section of the report.
+ Back to Wait Events Statistics 
+ Back to Top 
+SQL Statistics
+ SQL ordered by Elapsed Time 
+ SQL ordered by CPU Time 
+ SQL ordered by User I/O Wait Time 
+ SQL ordered by Gets 
+ SQL ordered by Reads 
+ SQL ordered by Physical Reads (UnOptimized) 
+ SQL ordered by Executions 
+ SQL ordered by Parse Calls 
+ SQL ordered by Sharable Memory 
+ SQL ordered by Version Count 
+ Complete List of SQL Text 
+ Back to Top 
+ SQL ordered by Elapsed Time&#160;&#160; [1] 
+ Resources reported for PL/SQL code includes the resources used by all SQL statements called by the code. 
+ % Total DB Time is the Elapsed Time of the SQL statement divided into the Total Database Time multiplied by 100 
+ %Total - Elapsed Time as a percentage of Total DB time 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Captured SQL account for 28.3% of Total DB Time (s): 4,843 
+ Captured PL/SQL account for 89.5% of Total DB Time (s): 4,843 
+ Elapsed Time (s) Executions Elapsed Time per Exec (s) %Total %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 1,088.68 36,367 0.03 22.48 90.06 0.00 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 301.16 0 &#160; 6.22 109.06 0.00 d70duh64kvs2q 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 298.30 0 &#160; 6.16 110.20 0.00 47arnd8y8dcja 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 293.85 0 &#160; 6.07 109.47 0.00 6r8pg3az2kzth 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 291.26 0 &#160; 6.01 110.52 0.01 0pvymv0g1bmb1 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 290.82 0 &#160; 6.00 111.95 0.06 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 286.68 0 &#160; 5.92 112.96 0.00 1va8kswj3qvwr 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 282.64 0 &#160; 5.84 112.80 0.00 41jqq0rbgjp8x 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 261.77 0 &#160; 5.40 101.63 0.01 7xkpjujn57ry6 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 259.59 0 &#160; 5.36 103.70 0.00 dyb29zmd9tcgc 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 254.14 0 &#160; 5.25 105.60 0.00 91zcj4r176vm7 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 253.54 0 &#160; 5.23 107.07 0.00 bs7yztx0hrunk 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 252.54 0 &#160; 5.21 105.74 0.00 660bmr6x0apzh 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 250.84 0 &#160; 5.18 106.17 0.00 07twhwbt2qcjb 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 250.52 0 &#160; 5.17 106.53 0.00 44rpvphd08xs4 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 247.51 0 &#160; 5.11 107.42 0.00 arccu27prjb3n 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 246.97 0 &#160; 5.10 106.45 0.00 7j89tnadvc851 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 201.02 1,566,939 0.00 4.15 72.06 0.09 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 56.95 1,817,330 0.00 1.18 94.15 0.00 byt1vt5n0wz1m 
+DBMS_SCHEDULER
+ &#160;
+ UPDATE TELCO.CDR_USAGE SET CHA... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by CPU Time 
+ Resources reported for PL/SQL code includes the resources used by all SQL statements called by the code. 
+ %Total - CPU Time as a percentage of Total DB CPU 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Captured SQL account for 25.6% of Total CPU Time (s): 4,685 
+ Captured PL/SQL account for 100.0% of Total CPU Time (s): 4,685 
+ CPU Time (s) Executions CPU per Exec (s) %Total Elapsed Time (s) %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 980.51 36,367 0.03 20.93 1,088.68 90.06 0.00 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 328.72 0 &#160; 7.02 298.30 110.20 0.00 47arnd8y8dcja 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 328.44 0 &#160; 7.01 301.16 109.06 0.00 d70duh64kvs2q 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 325.57 0 &#160; 6.95 290.82 111.95 0.06 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 323.84 0 &#160; 6.91 286.68 112.96 0.00 1va8kswj3qvwr 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 321.91 0 &#160; 6.87 291.26 110.52 0.01 0pvymv0g1bmb1 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 321.67 0 &#160; 6.87 293.85 109.47 0.00 6r8pg3az2kzth 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 318.82 0 &#160; 6.81 282.64 112.80 0.00 41jqq0rbgjp8x 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 271.46 0 &#160; 5.79 253.54 107.07 0.00 bs7yztx0hrunk 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 269.18 0 &#160; 5.75 259.59 103.70 0.00 dyb29zmd9tcgc 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 268.38 0 &#160; 5.73 254.14 105.60 0.00 91zcj4r176vm7 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 267.03 0 &#160; 5.70 252.54 105.74 0.00 660bmr6x0apzh 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 266.87 0 &#160; 5.70 250.52 106.53 0.00 44rpvphd08xs4 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 266.33 0 &#160; 5.69 250.84 106.17 0.00 07twhwbt2qcjb 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 266.04 0 &#160; 5.68 261.77 101.63 0.01 7xkpjujn57ry6 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 265.87 0 &#160; 5.68 247.51 107.42 0.00 arccu27prjb3n 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 262.90 0 &#160; 5.61 246.97 106.45 0.00 7j89tnadvc851 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 144.85 1,566,939 0.00 3.09 201.02 72.06 0.09 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 53.62 1,817,330 0.00 1.14 56.95 94.15 0.00 byt1vt5n0wz1m 
+DBMS_SCHEDULER
+ &#160;
+ UPDATE TELCO.CDR_USAGE SET CHA... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by User I/O Wait Time 
+ Resources reported for PL/SQL code includes the resources used by all SQL statements called by the code. 
+ %Total - User I/O Time as a percentage of Total User I/O Wait time 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Captured SQL account for 7.0% of Total User I/O Wait Time (s): 4 
+ Captured PL/SQL account for 6.7% of Total User I/O Wait Time (s): 4 
+ User I/O Time (s) Executions UIO per Exec (s) %Total Elapsed Time (s) %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 0.18 1,566,939 0.00 4.74 201.02 72.06 0.09 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 0.16 0 &#160; 4.21 290.82 111.95 0.06 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 0.05 3 0.02 1.41 2.36 30.83 2.32 b39m8n96gxk7c 
+DBMS_SCHEDULER
+ &#160;
+ call dbms_autotask_prvt.run_au... 
+ 0.03 2,539 0.00 0.76 0.36 85.07 8.08 3un99a0zwp4vd 
+ &#160;
+ &#160;
+ select owner#, name, namespace... 
+ 0.02 2,539 0.00 0.50 0.18 62.46 10.85 8swypbbr0m372 
+ &#160;
+ &#160;
+ select order#, columns, types ... 
+ 0.02 0 &#160; 0.49 261.77 101.63 0.01 7xkpjujn57ry6 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 0.02 0 &#160; 0.44 291.26 110.52 0.01 0pvymv0g1bmb1 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 0.02 36,367 0.00 0.39 1,088.68 90.06 0.00 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 0.01 556 0.00 0.30 0.50 100.35 2.33 c3zymn7x3k6wy 
+ &#160;
+ &#160;
+ select obj#, dataobj#, part#, ... 
+ 0.01 0 &#160; 0.20 2.48 77.12 0.31 14hgddvhs75z1 
+sqlplus@8512df493b78 (TNS V1-V3)
+ &#160;
+ BEGIN DBMS_WORKLOAD_REPOSITORY... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Gets 
+ Resources reported for PL/SQL code includes the resources used by all SQL statements called by the code. 
+ %Total - Buffer Gets as a percentage of Total Buffer Gets 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Total Buffer Gets: 223,834,457 
+ Captured SQL account for 97.3% of Total 
+ Buffer Gets Executions Gets per Exec %Total Elapsed Time (s) %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 209,812,722 36,367 5,769.32 93.74 1,088.68 90.1 0 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 14,598,905 0 &#160; 6.52 290.82 111.9 .1 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 14,568,878 0 &#160; 6.51 253.54 107.1 0 bs7yztx0hrunk 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 14,282,504 0 &#160; 6.38 259.59 103.7 0 dyb29zmd9tcgc 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 14,235,591 0 &#160; 6.36 291.26 110.5 0 0pvymv0g1bmb1 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 14,165,103 0 &#160; 6.33 254.14 105.6 0 91zcj4r176vm7 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 14,056,126 0 &#160; 6.28 246.97 106.5 0 7j89tnadvc851 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,996,388 0 &#160; 6.25 293.85 109.5 0 6r8pg3az2kzth 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,982,294 0 &#160; 6.25 298.30 110.2 0 47arnd8y8dcja 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,895,991 0 &#160; 6.21 252.54 105.7 0 660bmr6x0apzh 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,852,406 0 &#160; 6.19 250.84 106.2 0 07twhwbt2qcjb 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,782,490 0 &#160; 6.16 250.52 106.5 0 44rpvphd08xs4 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,766,967 0 &#160; 6.15 247.51 107.4 0 arccu27prjb3n 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,702,551 0 &#160; 6.12 261.77 101.6 0 7xkpjujn57ry6 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,640,639 0 &#160; 6.09 282.64 112.8 0 41jqq0rbgjp8x 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,638,314 0 &#160; 6.09 301.16 109.1 0 d70duh64kvs2q 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 13,322,394 0 &#160; 5.95 286.68 113 0 1va8kswj3qvwr 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 4,580,398 1,566,939 2.92 2.05 201.02 72.1 .1 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Reads 
+ %Total - Physical Reads as a percentage of Total Disk Reads 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Total Disk Reads: 1,360 
+ Captured SQL account for 8.7% of Total 
+ Physical Reads Executions Reads per Exec %Total Elapsed Time (s) %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 72 36,367 0.00 5.29 1,088.68 90.06 0.00 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 70 0 &#160; 5.15 290.82 111.95 0.06 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 34 0 &#160; 2.50 2.48 77.12 0.31 14hgddvhs75z1 
+sqlplus@8512df493b78 (TNS V1-V3)
+ &#160;
+ BEGIN DBMS_WORKLOAD_REPOSITORY... 
+ 18 556 0.03 1.32 0.50 100.35 2.33 c3zymn7x3k6wy 
+ &#160;
+ &#160;
+ select obj#, dataobj#, part#, ... 
+ 7 546 0.01 0.51 0.65 92.95 0.27 2wrx8j13jq2da 
+ &#160;
+ &#160;
+ select t.obj#, t.dataobj#, t.p... 
+ 7 2,539 0.00 0.51 0.18 62.46 10.85 8swypbbr0m372 
+ &#160;
+ &#160;
+ select order#, columns, types ... 
+ 6 2,539 0.00 0.44 0.36 85.07 8.08 3un99a0zwp4vd 
+ &#160;
+ &#160;
+ select owner#, name, namespace... 
+ 4 8,778 0.00 0.29 0.33 85.16 0.39 9tgj4g8y4rwy8 
+ &#160;
+ &#160;
+ select type#, blocks, extents,... 
+ 2 0 &#160; 0.15 261.77 101.63 0.01 7xkpjujn57ry6 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 1 93 0.01 0.07 0.01 101.48 1.15 05d0ckrja68sf 
+ &#160;
+ &#160;
+ insert into wrm$_snapshot_deta... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Physical Reads (UnOptimized) 
+ UnOptimized Read Reqs = Physical Read Reqs - (Optimized Read Reqs - Cell Flash Cache Read Hits for Controlfile) 
+ %Opt - Optimized Reads as percentage of SQL Read Requests 
+ %Total - UnOptimized Read Reqs as a percentage of Total UnOptimized Read Reqs 
+ Total Physical Read Requests: 1,356 
+ Captured SQL account for 11.7% of Total 
+ Total UnOptimized Read Requests: 1,356 
+ Captured SQL account for 11.7% of Total 
+ Total Optimized Read Requests: 1 
+ Captured SQL account for 0.0% of Total 
+ UnOptimized Read Reqs Physical Read Reqs Executions UnOptimized Reqs per Exec %Opt %Total SQL Id SQL Module PDB Name SQL Text 
+ 73 73 0 &#160; 0.00 5.38 brxznk1n5dc8d 
+DBMS_SCHEDULER
+ &#160;
+ DECLARE job BINARY_INTEGER := ... 
+ 71 71 36,367 0.00 0.00 5.24 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 52 52 0 &#160; 0.00 3.83 14hgddvhs75z1 
+sqlplus@8512df493b78 (TNS V1-V3)
+ &#160;
+ BEGIN DBMS_WORKLOAD_REPOSITORY... 
+ 15 15 1 15.00 0.00 1.11 27cw87sd1m737 
+ &#160;
+ &#160;
+ INSERT INTO wrh$_tempfile (dbi... 
+ 13 13 556 0.02 0.00 0.96 c3zymn7x3k6wy 
+ &#160;
+ &#160;
+ select obj#, dataobj#, part#, ... 
+ 12 12 15 0.80 0.00 0.88 8wgdua4m7xj6k 
+SYS_AUTO_STS_MODULE
+ &#160;
+ SELECT /* KKOADS:AWR */ /*+ no... 
+ 12 12 3 4.00 0.00 0.88 b39m8n96gxk7c 
+DBMS_SCHEDULER
+ &#160;
+ call dbms_autotask_prvt.run_au... 
+ 9 9 1 9.00 0.00 0.66 22nfqzm83xxgy 
+ &#160;
+ &#160;
+ insert into wrh$_tempstatxs (d... 
+ 8 8 1,566,939 0.00 0.00 0.59 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 7 7 2,539 0.00 0.00 0.52 8swypbbr0m372 
+ &#160;
+ &#160;
+ select order#, columns, types ... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Executions 
+ %CPU - CPU Time as a percentage of Elapsed Time 
+ %IO - User I/O Time as a percentage of Elapsed Time 
+ Total Executions: 5,192,268 
+ Captured SQL account for 69.0% of Total 
+ Executions Rows Processed Rows per Exec Elapsed Time (s) %CPU %IO SQL Id SQL Module PDB Name SQL Text 
+ 1,817,330 1,817,335 1.00 56.95 94.1 0 byt1vt5n0wz1m 
+DBMS_SCHEDULER
+ &#160;
+ UPDATE TELCO.CDR_USAGE SET CHA... 
+ 1,566,939 1,566,922 1.00 201.02 72.1 .1 brbv6ht7tvju1 
+DBMS_SCHEDULER
+ &#160;
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 36,367 36,360 1.00 1,088.68 90.1 0 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 36,289 36,286 1.00 0.34 86.4 0 0yn07bvqs30qj 
+ &#160;
+ &#160;
+ select pctfree_stg, pctused_st... 
+ 23,082 25,132 1.09 0.20 95 0 53saa2zkr6wc3 
+ &#160;
+ &#160;
+ select intcol#, nvl(pos#, 0), ... 
+ 16,683 21,255 1.27 0.26 72.6 0 0gwaa0289rasu 
+ &#160;
+ &#160;
+ select /*+ rule */ pos#, intco... 
+ 8,778 8,736 1.00 0.33 85.2 .4 9tgj4g8y4rwy8 
+ &#160;
+ &#160;
+ select type#, blocks, extents,... 
+ 7,822 7,740 0.99 0.28 78.3 0 acmvv4fhdc9zh 
+ &#160;
+ &#160;
+ select obj#, type#, ctime, mti... 
+ 7,786 129,114 16.58 0.69 86.2 0 ajyuz252n1fu6 
+ &#160;
+ &#160;
+ select name, intcol#, segcol#,... 
+ 6,561 12,717 1.94 2.13 72.1 0 121ffmrc95v7g 
+ &#160;
+ &#160;
+ select i.obj#, i.ts#, i.file#,... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Parse Calls 
+ Total Parse Calls: 2,009,286 
+ Captured SQL account for 2.8% of Total 
+ Parse Calls Executions % Total Parses SQL Id SQL Module PDB Name SQL Text 
+ 12,852 36,367 0.64 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+ &#160;
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 5,420 5,420 0.27 3s1z780ypx9uj 
+ &#160;
+ &#160;
+ select sowner, vname, case whe... 
+ 2,539 2,539 0.13 3un99a0zwp4vd 
+ &#160;
+ &#160;
+ select owner#, name, namespace... 
+ 2,539 2,539 0.13 8swypbbr0m372 
+ &#160;
+ &#160;
+ select order#, columns, types ... 
+ 2,458 2,458 0.12 8fkf44w2uz074 
+ &#160;
+ &#160;
+ select l.col#, l.intcol#, l.lo... 
+ 2,338 8,778 0.12 9tgj4g8y4rwy8 
+ &#160;
+ &#160;
+ select type#, blocks, extents,... 
+ 1,952 1,952 0.10 73k24f3wx22g2 
+DBMS_SCHEDULER
+ &#160;
+ UPDATE WORKLOAD_STATS SET UPDA... 
+ 1,952 1,952 0.10 9ndg4cg9qmtg9 
+DBMS_SCHEDULER
+ &#160;
+ SELECT STOP_FLAG FROM WORKLOAD... 
+ 1,487 1,487 0.07 4zxrh77d4v3vj 
+ &#160;
+ &#160;
+ SELECT idx_objn, nvl(idx_objd,... 
+ 1,442 1,442 0.07 d5m2makjzjn5z 
+ &#160;
+ &#160;
+ select /*+ rule */ name, onlin... 
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Sharable Memory 
+ No data exists for this section of the report.
+ Back to SQL Statistics 
+ Back to Top 
+ SQL ordered by Version Count 
+ No data exists for this section of the report.
+ Back to SQL Statistics 
+ Back to Top 
+ Complete List of SQL Text 
+<table border="0" class="tdiff" summary="This table displays the text of the SQL statements which have been
+ referred to in the report">
+ SQL Id SQL Text 
+ 05d0ckrja68sf insert into wrm$_snapshot_details (snap_id, dbid, instance_number, table_id, begin_time, end_time, step_id, flush_seq) select :snap_id, :dbid, :instance_number, :bind1, :bind2, :bind3, :step_id, :bind4 from dual 
+ 07twhwbt2qcjb DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 8, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 0gwaa0289rasu select /*+ rule */ pos#, intcol#, col#, spare1, bo#, spare2, spare3 from icol$ where obj#=:1 
+ 0pvymv0g1bmb1 DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 13, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 0yn07bvqs30qj select pctfree_stg, pctused_stg, size_stg, initial_stg, next_stg, minext_stg, maxext_stg, maxsiz_stg, lobret_stg, mintim_stg, pctinc_stg, initra_stg, maxtra_stg, optimal_stg, maxins_stg, frlins_stg, flags_stg, bfp_stg, enc_stg, cmpflag_stg, cmplvl_stg, imcflag_stg, ccflag_stg, flags2_stg from deferred_stg$ where obj# =:1 
+ 121ffmrc95v7g select i.obj#, i.ts#, i.file#, i.block#, i.intcols, i.type#, i.flags, i.property, i.pctfree$, i.initrans, i.maxtrans, i.blevel, i.leafcnt, i.distkey, i.lblkkey, i.dblkkey, i.clufac, i.cols, i.analyzetime, i.samplesize, i.dataobj#, nvl(i.degree, 1), nvl(i.instances, 1), i.rowcnt, mod(i.pctthres$, 256), i.indmethod#, i.trunccnt, nvl(c.unicols, 0), nvl(c.deferrable#+c.valid#, 0), nvl(i.spare1, i.intcols), i.spare4, i.spare2, i.spare6, decode(i.pctthres$, null, null, mod(trunc(i.pctthres$/256), 256)), nvl(i.evaledition#, 1), nvl(i.unusablebefore#, 0), nvl(i.unusablebeginning#, 0), ist.cachedblk, ist.cachehit, ist.logicalread from ind$ i, ind_stats$ ist, (select enabled, min(intcols) unicols, min(to_number(bitand(defer, 1))) deferrable#, min(to_number(bitand(defer, 4))) valid# from cdef$ where obj#=:1 and enabled &gt; 1 group by enabled) c where i.obj#=c.enabled(+) and i.obj# = ist.obj#(+) and i.bo#=:1 order by i.obj# 
+ 14hgddvhs75z1 BEGIN DBMS_WORKLOAD_REPOSITORY.CREATE_SNAPSHOT(); END;
+ 1ppfr2kwym0kf SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE msisdn = :m AND call_start &gt;= SYSDATE - 1/24 
+ 1va8kswj3qvwr DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 5, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 22nfqzm83xxgy insert into wrh$_tempstatxs (dbid, per_pdb, con_dbid, snap_id, instance_number, file#, creation_change#, phyrds, phywrts, singleblkrds, readtim, writetim, singleblkrdtim, phyblkrd, phyblkwrt, wait_count, time ) select /*+ leading (tf ts ftio fn) */ :dbid, ftio.con_id, con_id_to_dbid(ftio.con_id) con_dbid, :snap_id, :instance_number, tf.tfnum, to_number(tf.tfcrc_scn) creation_change#, ftio.kcftiopyr, ftio.kcftiopyw, ftio.kcftiosbr, floor(ftio.kcftioprt / 10000), floor(ftio.kcftiopwt / 10000), floor(ftio.kcftiosbt / 10000), ftio.kcftiopbr, ftio.kcftiopbw, nvl(fw.count, 0), nvl(fw.time, 0) FROM x$kcftio ftio, x$kcctf tf, x$kcbfwait fw, x$kccfn fn, x$kccts ts WHERE (1 = 1) AND ( ftio.con_id &lt; 4099 ) AND (tf.con_id IS NULL OR (ftio.con_id = tf.con_id)) AND (fw.con_id IS NULL OR (ftio.con_id = fw.con_id)) AND (fn.con_id IS NULL OR (ftio.con_id = fn.con_id)) AND (ts.con_id IS NULL OR (ftio.con_id = ts.con_id)) and ts.tstsn = tf.tftsn and ftio.kcftiofno = fn.fnfno and ftio.kcftiofno = tf.tfnum and tf.tfnum = fn.fnfno and tf.tffnh = fn.fnnum and tf.tfdup &lt;&gt; 0 and fn.fntyp = 7 and fn.fnnam is not null and bitand(tf.tfsta, 32) &lt;&gt; 32 and fw.file#(+) = (fn.fnfno + :db_files) 
+ 27cw87sd1m737 INSERT INTO wrh$_tempfile (dbid, per_pdb, con_dbid, snap_id, file#, creation_change#, filename, ts#, tsname, block_size ) SELECT /*+ leading(tf.fn tf.tf) */ :dbid, tf.con_id, con_id_to_dbid(tf.con_id) con_dbid, :lah_snap_id, tf.file# file#, tf.creation_change# cr_chg#, tf.name name, ts.ts# ts#, ts.name tsname, tf.block_size block_size FROM v$tempfile tf, ( select STR1_KEWRCACHE name, NUM1_KEWRCACHE ts#, CON_ID con_id from X$KEWRCACHE where cache_id_kewrcache = 3) ts WHERE (1 = 1) AND ( tf.con_id &lt; 4099 ) AND ((tf.con_id = ts.con_id)) AND tf.ts# = ts.ts# AND not exists (SELECT 1 FROM (select * from wrh$_tempfile where dbid = :dbid ) tfh WHERE tfh.file# = tf.file# AND tfh.creation_change# = tf.creation_change# ) 
+ 2wrx8j13jq2da select t.obj#, t.dataobj#, t.part#, t.hiboundlen, t.hiboundval, t.ts#, t.file#, t.block#, t.pctfree$, t.pctused$, t.initrans, t.maxtrans, t.flags, t.analyzetime, t.samplesize, t.rowcnt, t.blkcnt, t.empcnt, t.avgspc, t.chncnt, t.avgrln, length(t.bhiboundval), t.bhiboundval, ts.im_imcu_count, ts.im_block_count, ts.im_sys_incarnation, ts.im_stat_update_time, t.chunkid from tabpart$ t, tab_stats$ ts where t.bo# = :1 and t.obj# = ts.obj#(+) order by t.part# 
+ 3s1z780ypx9uj select sowner, vname, case when (bitand(flag, 536900016) = 16) then 'R' when (bitand(flag, 536900016) = 32) then 'P' end from sys.snap$ where mowner = :1 and master = :2 and /* refresh on statement */ auto_fast != 'N' and bitand(flag, 32768) = 0 and bitand(flag3, 67108864) != 0 /* refresh with rowid or primary key */ and (bitand(flag, 536900016) = 16 or bitand(flag, 536900016) = 32) 
+ 3un99a0zwp4vd select owner#, name, namespace, remoteowner, linkname, p_timestamp, p_obj#, nvl(property, 0), subname, type#, flags, d_attrs from dependency$ d, obj$ o where d_obj#=:1 and p_obj#=obj#(+) order by order# 
+ 41jqq0rbgjp8x DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 14, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 44rpvphd08xs4 DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 15, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 47arnd8y8dcja DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 1, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 4zxrh77d4v3vj SELECT idx_objn, nvl(idx_objd, 0), idx_base_table_objn, idx_spare1, nvl(json_value(idx_spare2, '$.build_scn' returning number), 0) build_scn FROM vecsys.vector$index WHERE JSON_VALUE(idx_params, '$.type') = :1 ORDER BY build_scn ASC 
+ 53saa2zkr6wc3 select intcol#, nvl(pos#, 0), col#, nvl(spare1, 0) from ccol$ where con#=:1 
+ 660bmr6x0apzh DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 10, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 6r8pg3az2kzth DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 2, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 73k24f3wx22g2 UPDATE WORKLOAD_STATS SET UPDATED_AT = SYSDATE, CNT_RECORD = :B9 , CNT_REJECTED = :B8 , CNT_RATING = :B7 , CNT_BALANCE = :B6 , CNT_ERRORS = :B5 , LAST_ERROR = :B4 , FINISHED = :B3 WHERE RUN_ID = :B2 AND SESSION_NO = :B1 
+ 7j89tnadvc851 DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 16, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 7xkpjujn57ry6 DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 4, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 8fkf44w2uz074 select l.col#, l.intcol#, l.lobj#, l.ind#, l.ts#, l.file#, l.block#, l.chunk, l.pctversion$, l.flags, l.property, l.retention, l.freepools, l.maxinl from lob$ l where l.obj# = :1 order by l.intcol# asc 
+ 8swypbbr0m372 select order#, columns, types from access$ where d_obj#=:1 
+ 8wgdua4m7xj6k SELECT /* KKOADS:AWR */ /*+ no_parallel */ executions, end_of_fetch_count, px_servers, elapsed_time/executions elapsed_time, cpu_time/executions cpu_time, buffer_gets/executions buffer_gets FROM (SELECT sum(executions_delta) as EXECUTIONS, sum(case when px_servers_execs_delta &gt; 0 then px_servers_execs_delta else executions_delta end) as px_servers, sum(end_of_fetch_count_delta) as end_of_fetch_count, sum(elapsed_time_delta) as ELAPSED_TIME, sum(cpu_time_delta) as CPU_TIME, sum(buffer_gets_delta) as BUFFER_GETS FROM AWR_PDB_SQLSTAT s, V$DATABASE d, AWR_PDB_SNAPSHOT sn WHERE s.dbid = d.dbid AND bitand(nvl(s.flag, 0), 1) = 0 AND sn.end_interval_time &gt; (select systimestamp at TIME ZONE dbtimezone from dual) - 7 AND s.sql_id = :1 AND s.snap_id = sn.snap_id AND s.instance_number = sn.instance_number AND s.dbid = sn.dbid AND parsing_schema_name = :2 AND executions_delta &gt; 0 AND :3 is not null AND :4 is not null) WHERE executions &gt; 0 
+ 91zcj4r176vm7 DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 11, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ 9ndg4cg9qmtg9 SELECT STOP_FLAG FROM WORKLOAD_RUN WHERE RUN_ID = :B1 
+ 9tgj4g8y4rwy8 select type#, blocks, extents, minexts, maxexts, extsize, extpct, user#, iniexts, NVL(lists, 65535), NVL(groups, 65535), cachehint, hwmincr, NVL(spare1, 0), NVL(scanhint, 0), NVL(bitmapranges, 0) from seg$ where ts#=:1 and file#=:2 and block#=:3 
+ acmvv4fhdc9zh select obj#, type#, ctime, mtime, stime, status, dataobj#, flags, oid$, spare1, spare2, spare3, signature, spare7, spare8, spare9, nvl(dflcollid, 16382), creappid, creverid, modappid, modverid, crepatchid, modpatchid from obj$ where owner#=:1 and name=:2 and namespace=:3 and remoteowner is null and linkname is null and subname is null 
+ ajyuz252n1fu6 select name, intcol#, segcol#, type#, length, nvl(precision#, 0), decode(type#, 2, nvl(scale, -127/*MAXSB1MINAL*/), 178, scale, 179, scale, 180, scale, 181, scale, 182, scale, 183, scale, 231, scale, 119, nvl(scale, 0), 127, nvl(scale, 0), 0), null$, fixedstorage, nvl(deflength, 0), default$, rowid, col#, property, nvl(charsetid, 0), nvl(charsetform, 0), spare1, spare2, nvl(spare3, 0), nvl(evaledition#, 1), nvl(unusablebefore#, 0), nvl(unusablebeginning#, 0), case when (type# in (1, 8, 9, 96, 112)) then nvl(collid, 16382) else (case when (type# in (119)) then nvl(collid, 0) else 0 end ) end case, nvl(collintcol#, 0), nvl(acdrrescol#, 0), nvl(spare7, 0), nvl(spare9, 0), nvl(spare10, 0) from col$ where obj#=:1 order by intcol# 
+ arccu27prjb3n DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 12, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ b39m8n96gxk7c call dbms_autotask_prvt.run_autotask ( :0, :1 ) 
+ brbv6ht7tvju1 INSERT INTO TELCO.CDR_USAGE (CALL_ID, MSISDN, CELL_ID, CALL_START, DURATION_SEC, CHARGE_AMT) VALUES (TELCO.CDR_SEQ.NEXTVAL, :B4 , :B3 , SYSDATE, :B2 , :B1 ) RETURNING ROWID INTO :O0 
+ brxznk1n5dc8d DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 7, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ bs7yztx0hrunk DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 9, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ byt1vt5n0wz1m UPDATE TELCO.CDR_USAGE SET CHARGE_AMT = ROUND(CHARGE_AMT * 1.05, 3) WHERE ROWID = :B1 
+ c3zymn7x3k6wy select obj#, dataobj#, part#, hiboundlen, hiboundval, flags, ts#, file#, block#, pctfree$, initrans, maxtrans, analyzetime, samplesize, rowcnt, blevel, leafcnt, distkey, lblkkey, dblkkey, clufac, pctthres$, length(bhiboundval), bhiboundval from indpart$ where bo# = :1 order by part# 
+ d5m2makjzjn5z select /*+ rule */ name, online$, contents$, undofile#, undoblock#, blocksize, dflmaxext, dflinit, dflincr, dflextpct, dflminext, dflminlen, owner#, scnwrp, scnbas, NVL(pitrscnwrp, 0), NVL(pitrscnbas, 0), dflogging, bitmapped, inc#, MOD(flags, (4294967296 * 4294967296)), plugged, NVL(spare1, 0), NVL(spare2, 0), affstrength, FLOOR(flags/(4294967296 * 4294967296)) from ts$ where ts#=:1 
+ d70duh64kvs2q DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 3, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ dyb29zmd9tcgc DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) := :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE := :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE := :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE := :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end; chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128) := :credown; credential_name VARCHAR2(128) := :crednam; destination_owner VARCHAR2(128) := :destown; destination_name VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid; log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1, 6, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN :b := 1; ELSE :b := 0; END IF; END; 
+ Back to SQL Statistics 
+ Back to Top 
+Instance Activity Statistics
+ Key Instance Activity Stats 
+ Instance Activity Stats 
+ Instance Activity Stats - Absolute Values 
+ Back to Top 
+ Key Instance Activity Stats 
+ Ordered by statistic name 
+ Statistic Total per Second per Trans 
+ db block changes 10,413,343 2,865.48 5.93 
+ execute count 5,192,268 1,428.78 2.96 
+ logons cumulative 16 0.00 0.00 
+ opened cursors cumulative 6,943,130 1,910.57 3.96 
+ parse count (total) 2,009,286 552.90 1.15 
+ parse time elapsed 13,835 3.81 0.01 
+ physical reads 1,360 0.37 0.00 
+ physical writes 662 0.18 0.00 
+ redo size 1,465,340,764 403,223.49 835.16 
+ session cursor cache hits 5,302,237 1,459.04 3.02 
+ session logical reads 223,834,457 61,593.39 127.57 
+ user calls 34 0.01 0.00 
+ user commits 1,754,572 482.81 1.00 
+ user rollbacks 0 0.00 0.00 
+ workarea executions - optimal 19,490 5.36 0.01 
+ Back to Instance Activity Statistics 
+ Back to Top 
+ Instance Activity Stats 
+ Ordered by statistic name 
+ Statistic Total per Second per Trans 
+ ASSM cbk:blocks examined 17,253 4.75 0.01 
+ ASSM cbk:blocks marked full 21,528 5.92 0.01 
+ ASSM gsp:L1 bitmaps examined 17,839 4.91 0.01 
+ ASSM gsp:L2 bitmap full 46 0.01 0.00 
+ ASSM gsp:L2 bitmaps examined 1,186 0.33 0.00 
+ ASSM gsp:Search all 47 0.01 0.00 
+ ASSM gsp:Search hint 602 0.17 0.00 
+ ASSM gsp:Search steal 47 0.01 0.00 
+ ASSM gsp:bump HWM 47 0.01 0.00 
+ ASSM gsp:get free block 16,547 4.55 0.01 
+ ASSM gsp:good hint 16,390 4.51 0.01 
+ ASSM rsv:fill reserve 17 0.00 0.00 
+ ASSM wasted db state change 9,319 2.56 0.01 
+ Batched IO (bound) vector count 0 0.00 0.00 
+ Batched IO block miss count 0 0.00 0.00 
+ Batched IO double miss count 0 0.00 0.00 
+ Batched IO single block count 0 0.00 0.00 
+ Block Cleanout Optim referenced 9 0.00 0.00 
+ CCursor + sql area evicted 848,730 233.55 0.48 
+ CCursor + sql area evicted - failed 1,673,354 460.46 0.95 
+ CPU used by this session 468,491 128.92 0.27 
+ CPU used when call started 300 0.08 0.00 
+ CR blocks created 321,856 88.57 0.18 
+ Cached Commit SCN referenced 0 0.00 0.00 
+ Commit SCN cached 0 0.00 0.00 
+ DDLs executed 36 0.01 0.00 
+ DML statements retried 0 0.00 0.00 
+ HSC Heap Segment Block Changes 3,394,118 933.97 1.93 
+ Heap Segment Array Inserts 1,001 0.28 0.00 
+ Heap Segment Array Updates 48 0.01 0.00 
+ Heatmap BlkLevel Flushed 0 0.00 0.00 
+ Heatmap BlkLevel Flushed to SYSAUX 0 0.00 0.00 
+ Heatmap BlkLevel Ranges Flushed 0 0.00 0.00 
+ IMU CR rollbacks 3,160 0.87 0.00 
+ IMU Flushes 40,325 11.10 0.02 
+ IMU Redo allocation size 36,096,324 9,932.77 20.57 
+ IMU commits 1,427,621 392.84 0.81 
+ IMU contention 3,694 1.02 0.00 
+ IMU ktichg flush 7,923 2.18 0.00 
+ IMU pool not allocated 286,642 78.88 0.16 
+ IMU undo allocation size 1,603,638,936 441,279.53 913.98 
+ IMU- failed to get a private strand 286,642 78.88 0.16 
+ KTFB alloc myinst 50 0.01 0.00 
+ KTFB alloc req 552 0.15 0.00 
+ KTFB alloc search FFB 50 0.01 0.00 
+ KTFB alloc space (block) 173,680,176 47,792.25 98.99 
+ KTFB alloc steal 18 0.00 0.00 
+ KTFB alloc time (ms) 349,416 96.15 0.20 
+ KTFB apply req 551 0.15 0.00 
+ KTFB apply time (ms) 4,100 1.13 0.00 
+ KTFB free req 39 0.01 0.00 
+ KTFB free space (block) 1,992 0.55 0.00 
+ KTFB free time (ms) 190 0.05 0.00 
+ LOB table id lookup cache misses 1 0.00 0.00 
+ PX local messages recv'd 0 0.00 0.00 
+ PX local messages sent 0 0.00 0.00 
+ Requests to/from client 10 0.00 0.00 
+ RowCR attempts 1,558,639 428.90 0.89 
+ RowCR hits 1,558,639 428.90 0.89 
+ SQL*Net roundtrips to/from client 10 0.00 0.00 
+ Session total flash IO requests 1,646 0.45 0.00 
+ TBS Extension: bytes extended 26,214,400 7,213.52 14.94 
+ TBS Extension: files extended 4 0.00 0.00 
+ TBS Extension: tasks created 11 0.00 0.00 
+ TBS Extension: tasks executed 11 0.00 0.00 
+ active txn count during cleanout 9,500 2.61 0.01 
+ auto extends on undo tablespace 3 0.00 0.00 
+ blocks cleaned out using minact 590 0.16 0.00 
+ buffer is not pinned count 5,533,717 1,522.73 3.15 
+ buffer is pinned count 2,074,088 570.73 1.18 
+ bytes received via SQL*Net from client 2,775 0.76 0.00 
+ bytes sent via SQL*Net to client 5,346 1.47 0.00 
+ calls to get snapshot scn: kcmgss 26,697,404 7,346.43 15.22 
+ calls to kcmadj 1,692,796 465.81 0.96 
+ calls to kcmgas 1,754,234 482.72 1.00 
+ calls to kcmgcs 1,243,121 342.07 0.71 
+ cell physical IO interconnect bytes 102,719,488 28,265.72 58.54 
+ change write time 522 0.14 0.00 
+ cleanout - number of ktugct calls 15,238 4.19 0.01 
+ cleanouts and rollbacks - consistent read gets 663 0.18 0.00 
+ cleanouts only - consistent read gets 201 0.06 0.00 
+ cluster key scan block gets 106,141 29.21 0.06 
+ cluster key scans 82,432 22.68 0.05 
+ commit batch/immediate performed 22 0.01 0.00 
+ commit batch/immediate requested 22 0.01 0.00 
+ commit cleanout failures: callback failure 74 0.02 0.00 
+ commit cleanout failures: cannot pin 5,079 1.40 0.00 
+ commit cleanout failures: in-memory undo 537 0.15 0.00 
+ commit cleanout failures: temp data 2 0.00 0.00 
+ commit cleanouts 1,781,714 490.28 1.02 
+ commit cleanouts successfully completed 1,776,044 488.72 1.01 
+ commit immediate performed 22 0.01 0.00 
+ commit immediate requested 22 0.01 0.00 
+ commit txn count during cleanout 5,891 1.62 0.00 
+ consistent changes 864,380 237.85 0.49 
+ consistent gets 215,282,748 59,240.19 122.70 
+ consistent gets examination 4,369,354 1,202.33 2.49 
+ consistent gets examination (fastpath) 4,366,592 1,201.57 2.49 
+ consistent gets from cache 215,283,739 59,240.46 122.70 
+ consistent gets pin 210,914,397 58,038.13 120.21 
+ consistent gets pin (fastpath) 210,178,157 57,835.54 119.79 
+ control file blocks written 48 0.01 0.00 
+ control file cache search for read hit 642 0.18 0.00 
+ control file read req (single-block) 108 0.03 0.00 
+ control file read req (single-block) no enqueue 183 0.05 0.00 
+ cursor authentications 152,314 41.91 0.09 
+ cursor reload failures 57 0.02 0.00 
+ data blocks consistent reads - undo records applied 860,106 236.68 0.49 
+ db block changes 10,413,343 2,865.48 5.93 
+ db block gets 8,551,832 2,353.24 4.87 
+ db block gets direct 0 0.00 0.00 
+ db block gets from cache 8,551,832 2,353.24 4.87 
+ db block gets from cache (fastpath) 8,472,993 2,331.55 4.83 
+ deferred (CURRENT) block cleanout applications 896,791 246.77 0.51 
+ enqueue conversions 346 0.10 0.00 
+ enqueue releases 6,242,618 1,717.81 3.56 
+ enqueue requests 6,243,374 1,718.01 3.56 
+ enqueue timeouts 742 0.20 0.00 
+ enqueue waits 107 0.03 0.00 
+ execute count 5,192,268 1,428.78 2.96 
+ file io service time 2,436 0.67 0.00 
+ free buffer inspected 5,447 1.50 0.00 
+ free buffer requested 356,303 98.05 0.20 
+ global undo segment hints helped 4 0.00 0.00 
+ global undo segment hints were stale 1 0.00 0.00 
+ heap block compress 19,447 5.35 0.01 
+ hot buffers moved to head of LRU 7,488 2.06 0.00 
+ immediate (CR) block cleanout applications 864 0.24 0.00 
+ immediate (CURRENT) block cleanout applications 300 0.08 0.00 
+ index crx upgrade (positioned) 0 0.00 0.00 
+ index fast full scans (full) 0 0.00 0.00 
+ index fetch by key 1,782,191 490.41 1.02 
+ index range scans 145,912 40.15 0.08 
+ leaf node 90-10 splits 6 0.00 0.00 
+ leaf node splits 64 0.02 0.00 
+ lob reads 648 0.18 0.00 
+ lob writes 641 0.18 0.00 
+ lob writes unaligned 641 0.18 0.00 
+ logical read bytes from cache 1,833,660,956,672 504,575,579.16 1,045,075.93 
+ logons cumulative 16 0.00 0.00 
+ max cf enq hold time 26 0.01 0.00 
+ messages sent 892,194 245.51 0.51 
+ min active SCN optimization applied on CR 18 0.00 0.00 
+ no work - consistent read gets 208,545,238 57,386.20 118.86 
+ non-idle wait count 265,139 72.96 0.15 
+ opened cursors cumulative 6,943,130 1,910.57 3.96 
+ parse count (describe) 14 0.00 0.00 
+ parse count (failures) 24 0.01 0.00 
+ parse count (hard) 978,880 269.36 0.56 
+ parse count (total) 2,009,286 552.90 1.15 
+ parse time cpu 101,341 27.89 0.06 
+ parse time elapsed 13,835 3.81 0.01 
+ physical read IO requests 1,356 0.37 0.00 
+ physical read bytes 11,141,120 3,065.75 6.35 
+ physical read total IO requests 1,473 0.41 0.00 
+ physical read total bytes 12,984,320 3,572.95 7.40 
+ physical read total multi block requests 0 0.00 0.00 
+ physical reads 1,360 0.37 0.00 
+ physical reads cache 1,360 0.37 0.00 
+ physical reads cache prefetch 5 0.00 0.00 
+ physical write IO requests 61 0.02 0.00 
+ physical write bytes 5,423,104 1,492.30 3.09 
+ physical write total IO requests 173 0.05 0.00 
+ physical write total bytes 89,735,168 24,692.77 51.14 
+ physical write total multi block requests 94 0.03 0.00 
+ physical writes 662 0.18 0.00 
+ physical writes direct 662 0.18 0.00 
+ physical writes direct (lob) 662 0.18 0.00 
+ physical writes non checkpoint 662 0.18 0.00 
+ pinned cursors current 0 0.00 0.00 
+ prefetched blocks aged out before use 32 0.01 0.00 
+ process last non-idle time 3,633 1.00 0.00 
+ recursive calls 13,447,599 3,700.43 7.66 
+ recursive cpu usage 1,387 0.38 0.00 
+ redo buffer allocation retries 433 0.12 0.00 
+ redo entries 2,418,541 665.52 1.38 
+ redo log space requests 495 0.14 0.00 
+ redo size 1,465,340,764 403,223.49 835.16 
+ redo size for direct writes 0 0.00 0.00 
+ redo synch long waits 0 0.00 0.00 
+ redo synch time 0 0.00 0.00 
+ redo synch time (usec) 0 0.00 0.00 
+ redo synch time overhead (usec) 0 0.00 0.00 
+ redo synch time overhead count ( 2ms) 0 0.00 0.00 
+ redo synch time overhead count ( 8ms) 0 0.00 0.00 
+ redo synch writes 1 0.00 0.00 
+ redo write info find 0 0.00 0.00 
+ rollback changes - undo records applied 2 0.00 0.00 
+ rollbacks only - consistent read gets 323,621 89.05 0.18 
+ rows fetched via callback 1,631,381 448.91 0.93 
+ securefile alloc all sources 62 0.02 0.00 
+ securefile allocation bytes 5,423,104 1,492.30 3.09 
+ securefile allocation chunks 59 0.02 0.00 
+ securefile bytes non-transformed 5,467,248 1,504.44 3.12 
+ securefile direct write bytes 5,423,104 1,492.30 3.09 
+ securefile direct write ops 61 0.02 0.00 
+ securefile number of cfs added 8 0.00 0.00 
+ securefile number of non-transformed flushes 210 0.06 0.00 
+ securefile number of ufs added 1 0.00 0.00 
+ securefile number of waits for chaining hbb 1 0.00 0.00 
+ securefile number of waits for reclaiming fsb 0 0.00 0.00 
+ securefile number of waits for reclaiming hbb 0 0.00 0.00 
+ securefiles dispenser load chunks 761 0.21 0.00 
+ segment cfs allocations 0 0.00 0.00 
+ segment chunks allocation from dispenser 59 0.02 0.00 
+ segment dispenser allocations 16 0.00 0.00 
+ segment dispenser load empty 0 0.00 0.00 
+ segment dispenser load tasks 4 0.00 0.00 
+ segment prealloc tasks 4 0.00 0.00 
+ segment total chunk allocation 0 0.00 0.00 
+ session connect time 0 0.00 0.00 
+ session cursor cache hits 5,302,237 1,459.04 3.02 
+ session logical reads 223,834,457 61,593.39 127.57 
+ shared hash latch upgrades - no wait 209,398 57.62 0.12 
+ shared hash latch upgrades - wait 1 0.00 0.00 
+ shared io pool buffer get success 40 0.01 0.00 
+ sorts (memory) 31,571 8.69 0.02 
+ sorts (rows) 328,479 90.39 0.19 
+ sql area evicted 964,175 265.32 0.55 
+ sql area evicted - failed 0 0.00 0.00 
+ sql area purged 44 0.01 0.00 
+ switch current caused by our pin 179 0.05 0.00 
+ switch current to new buffer 443 0.12 0.00 
+ table fetch by rowid 1,843,668 507.33 1.05 
+ table fetch continued row 2,056 0.57 0.00 
+ table scan blocks gotten 208,467,148 57,364.71 118.81 
+ table scan disk non-IMC rows gotten 32,439,379,476 8,926,469.55 18,488.49 
+ table scan rows gotten 32,439,430,116 8,926,483.48 18,488.51 
+ table scans (long tables) 2,566 0.71 0.00 
+ table scans (short tables) 62,865 17.30 0.04 
+ total cf enq hold time 32 0.01 0.00 
+ total number of cf enq holders 28 0.01 0.00 
+ transaction rollbacks 18 0.00 0.00 
+ undo change vector size 395,520,852 108,837.00 225.42 
+ user calls 34 0.01 0.00 
+ user commits 1,754,572 482.81 1.00 
+ user commits Autonomous 1,754,638 482.83 1.00 
+ user commits Commit on Success 8 0.00 0.00 
+ user commits PL/SQL 1,754,604 482.82 1.00 
+ user commits Top Level 2 0.00 0.00 
+ user logons cumulative 0 0.00 0.00 
+ user logouts cumulative 0 0.00 0.00 
+ user rollbacks 0 0.00 0.00 
+ workarea executions - optimal 19,490 5.36 0.01 
+ write clones created in foreground 352 0.10 0.00 
+ Back to Instance Activity Statistics 
+ Back to Top 
+ Instance Activity Stats - Absolute Values 
+ Statistics with absolute values (should not be diffed) 
+ Statistic Begin Value End Value 
+ logons current 16 16 
+ opened cursors current 33 33 
+ session cursor cache count 4,357 5,142 
+ session pga memory 63,917,112 66,096,864 
+ session pga memory max 95,702,072 203,067,104 
+ session uga memory 303,431,080 414,873,616 
+ session uga memory max 451,485,592 598,205,328 
+ total number of online undo segments 13 17 
+ Back to Instance Activity Statistics 
+ Back to Top 
+IO Stats
+ IOStat by Function summary 
+ IOStat by Filetype summary 
+ IOStat by Function/Filetype summary 
+ TableSpace IO Stats 
+ File IO Stats 
+ Back to Top 
+ IOStat by Filetype summary 
+ 'Data' columns suffixed with M,G,T,P are in multiples of 1024 other columns suffixed with K,M,G,T,P are in multiples of 1000 
+ Small Read and Large Read are average service times 
+ Ordered by (Data Read + Write) desc 
+ Filetype Name Reads: Data Reqs per sec Data per sec Writes: Data Reqs per sec Data per sec Small Read Large Read 
+ Data File 13M 0.46 .004M 647M 2.33 .178M 1.69ms &#160; 
+ TOTAL: 13M 0.46 .004M 647M 2.33 .178M 1.69ms &#160; 
+ Back to IO Stats 
+ Back to Top 
+ Tablespace IO Stats 
+ ordered by IOs (Reads + Writes) desc 
+ Tablespace Reads Av Rds/s Av Rd(ms) Av Blks/Rd 1-bk Rds/s Av 1-bk Rd(ms) % Opt Reads Writes Writes avg/s Av Writes(ms) Buffer Waits Av Buf Wt(ms) PDB Name 
+ UNDOTBS1 
+ 0 0 0.00 0.00 0 0.00 0.00 
+ 3,881 1 3.30 881 0.02 
+ &#160;
+ USERS 
+ 71 0 0.14 1.01 0 0.14 0.00 
+ 2,860 1 1.98 5,703 0.35 
+ &#160;
+ SYSAUX 
+ 155 0 1.35 1.00 0 1.35 0.00 
+ 1,225 0 2.19 2 0.00 
+ &#160;
+ Back to IO Stats 
+ Back to Top 
+ File IO Stats 
+ ordered by Tablespace, File 
+ Tablespace Filename Reads Av Rds/s Av Rd(ms) Av Blks/Rd 1-bk Rds/s Av 1-bk Rd(ms) % Opt Reads Writes Writes avg/s Av Writes(ms) Buffer Waits Av Buf Wt(ms) PDB Name 
+ SYSAUX /opt/oracle/oradata/FREE/FREEPDB1/sysaux01.dbf 
+ 155 0 1.35 1.00 0 1.35 0.00 
+ 1,225 0 2.19 2 0.00 
+ &#160;
+ UNDOTBS1 /opt/oracle/oradata/FREE/FREEPDB1/undotbs01.dbf 
+ 0 0 &#160; &#160; 0 &#160; &#160; 
+ 3,881 1 3.30 881 0.02 
+ &#160;
+ USERS /opt/oracle/oradata/FREE/FREEPDB1/users01.dbf 
+ 71 0 0.14 1.01 0 0.14 0.00 
+ 2,860 1 1.98 5,703 0.35 
+ &#160;
+ Back to IO Stats 
+ Back to Top 
+Wait Statistics
+ Wait Statistics 
+ Back to Top 
+ Wait Statistics 
+ Back to Top 
+ Buffer Wait Statistics 
+ ordered by wait time desc, waits desc 
+ Class Waits Total Wait Time (s) Avg Time (ms) 
+ data block 5,678 2 0 
+ system undo header 2 0 15 
+ file header block 2 0 10 
+ undo header 818 0 0 
+ undo block 61 0 0 
+ 1st level bmb 18 0 0 
+ segment header 8 0 0 
+ 2nd level bmb 2 0 0 
+ free list 2 0 0 
+ Back to Wait Statistics 
+ Back to Top 
+Undo Statistics
+ Undo Segment Summary 
+ Undo Segment Stats 
+ Undo Tablespace Stats 
+ Back to Top 
+ Undo Segment Summary 
+ Min/Max TR (mins) - Min and Max Tuned Retention (minutes) 
+ STO - Snapshot Too Old count, OOS - Out of Space count 
+ Undo segment block stats: 
+ uS - unexpired Stolen, uR - unexpired Released, uU - unexpired reUsed 
+ eS - expired Stolen, eR - expired Released, eU - expired reUsed 
+ Undo TS# Num Undo Blocks (K) Number of Transactions Max Qry Len (s) Max Tx Concurcy Min/Max TR (mins) STO/ OOS uS/uR/uU/ eS/eR/eU 
+ 2 49.80 1,712,855 28 14 15/15.5 0/0 0/0/0/36/1992/49866 
+ Back to Undo Statistics 
+ Back to Top 
+ Undo Segment Stats 
+ Most recent 35 Undostat rows, ordered by Time desc 
+ End Time Num Undo Blocks Number of Transactions Max Qry Len (s) Max Tx Concy Tun Ret (mins) STO/ OOS uS/uR/uU/ eS/eR/eU 
+ 19-Oct 17:03 7,714 261,228 0 6 15 0/0 0/0/0/0/0/7584 
+ 19-Oct 16:53 9,188 319,099 28 14 15 0/0 0/0/0/0/0/9323 
+ 19-Oct 16:43 7,507 260,935 28 7 15 0/0 0/0/0/1/264/7498 
+ 19-Oct 16:33 8,449 290,502 0 8 15 0/0 0/0/0/11/1560/8476 
+ 19-Oct 16:23 8,427 290,997 28 7 15 0/0 0/0/0/1/0/8217 
+ 19-Oct 16:13 8,519 290,094 28 6 15 0/0 0/0/0/23/168/8768 
+ Back to Undo Statistics 
+ Back to Top 
+ Undo Tablespace Stats 
+ This section shows the statistics for the Undo Tablespace at the beginning and end of the snapshot. 
+ Statistic Begin Value End Value 
+ Tablespace# 2 2 
+ Tablespace Size (MB) 100 130 
+ Back to Undo Statistics 
+ Back to Top 
+Segment Statistics
+ Segments by Logical Reads 
+ Segments by Physical Reads 
+ Segments by Physical Read Requests 
+ Segments by UnOptimized Reads 
+ Segments by Optimized Reads 
+ Segments by Direct Physical Reads 
+ Segments by Physical Writes 
+ Segments by Physical Write Requests 
+ Segments by Direct Physical Writes 
+ Segments by Table Scans 
+ Segments by DB Blocks Changes 
+ Segments by Row Lock Waits 
+ Segments by ITL Waits 
+ Segments by Buffer Busy Waits 
+ Back to Top 
+ Segments by Logical Reads 
+ Total Logical Reads: 223,834,457 
+ Captured Segments account for 97.7% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Logical Reads %Total PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 212,443,280 94.91 
+ &#160;
+ TELCO USERS 
+ SYS_C008652 &#160; INDEX 73136 73136 3,199,008 1.43 
+ &#160;
+ TELCO USERS 
+ SUBSCRIBER &#160; TABLE 73135 73135 1,597,728 0.71 
+ &#160;
+ SYS SYSTEM 
+ AUD_OBJECT_OPT$ &#160; TABLE 659 659 160,512 0.07 
+ &#160;
+ SYS SYSTEM 
+ ICOL$ &#160; TABLE 20 2 154,768 0.07 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Physical Reads 
+ Total Physical Reads: 1,360 
+ Captured Segments account for 97.0% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Physical Reads %Total PDB Name 
+ SYS SYSTEM 
+ I_OBJ2 &#160; INDEX 37 37 1,143 84.04 
+ &#160;
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 72 5.29 
+ &#160;
+ SYS SYSTEM 
+ HIST_HEAD$ &#160; TABLE 68 68 29 2.13 
+ &#160;
+ SYS SYSTEM 
+ I_HH_OBJ#_INTCOL# &#160; INDEX 70 70 9 0.66 
+ &#160;
+ SYS SYSAUX 
+ I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST &#160; INDEX 19304 19304 9 0.66 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Physical Read Requests 
+ Total Physical Read Requests: 1,356 
+ Captured Segments account for 97.0% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Phys Read Requests %Total PDB Name 
+ SYS SYSTEM 
+ I_OBJ2 &#160; INDEX 37 37 1,143 84.29 
+ &#160;
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 71 5.24 
+ &#160;
+ SYS SYSTEM 
+ HIST_HEAD$ &#160; TABLE 68 68 26 1.92 
+ &#160;
+ SYS SYSTEM 
+ I_HH_OBJ#_INTCOL# &#160; INDEX 70 70 9 0.66 
+ &#160;
+ SYS SYSAUX 
+ I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST &#160; INDEX 19304 19304 9 0.66 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by UnOptimized Reads 
+ Total UnOptimized Read Requests: 1,356 
+ Captured Segments account for 97.0% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# UnOptimized Reads %Total PDB Name 
+ SYS SYSTEM 
+ I_OBJ2 &#160; INDEX 37 37 1,143 84.29 
+ &#160;
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 71 5.24 
+ &#160;
+ SYS SYSTEM 
+ HIST_HEAD$ &#160; TABLE 68 68 26 1.92 
+ &#160;
+ SYS SYSTEM 
+ I_HH_OBJ#_INTCOL# &#160; INDEX 70 70 9 0.66 
+ &#160;
+ SYS SYSAUX 
+ I_WRI$_OPTSTAT_HH_OBJ_ICOL_ST &#160; INDEX 19304 19304 9 0.66 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Optimized Reads 
+ No data exists for this section of the report.
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Direct Physical Reads 
+ No data exists for this section of the report.
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Physical Writes 
+ Total Physical Writes: 662 
+ Captured Segments account for 2.3E+03% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Physical Writes %Total PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 14,126 2133.84 
+ &#160;
+ SYS SYSAUX 
+ WRH$_SYSSTAT_PK WRH$_SYSSTAT_3457782515_MXSN INDEX PARTITION 72702 72702 106 16.01 
+ &#160;
+ TELCO_LOAD USERS 
+ WORKLOAD_STATS &#160; TABLE 73147 73147 95 14.35 
+ &#160;
+ SYS SYSAUX 
+ WRI$_SQLSET_PLAN_LINES &#160; TABLE 11488 11488 81 12.24 
+ &#160;
+ SYS SYSAUX 
+ WRH$_SYSSTAT WRH$_SYSSTAT_3457782515_MXSN TABLE PARTITION 72699 72699 51 7.70 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Physical Write Requests 
+ Total Physical Write Requests: 61 
+ Captured Segments account for 5.5E+03% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Phys Write Requests %Total PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 2,829 4637.70 
+ &#160;
+ SYS SYSAUX 
+ WRH$_SYSSTAT_PK WRH$_SYSSTAT_3457782515_MXSN INDEX PARTITION 72702 72702 26 42.62 
+ &#160;
+ SYS SYSAUX 
+ WRH$_LATCH_PK WRH$_LATCH_3457782515_MXSN INDEX PARTITION 72630 72630 25 40.98 
+ &#160;
+ SYS SYSAUX 
+ WRH$_SYSSTAT WRH$_SYSSTAT_3457782515_MXSN TABLE PARTITION 72699 72699 23 37.70 
+ &#160;
+ TELCO_LOAD USERS 
+ WORKLOAD_STATS &#160; TABLE 73147 73147 19 31.15 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Direct Physical Writes 
+ No data exists for this section of the report.
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Table Scans 
+ Total Table Scans: 2,566 
+ Captured Segments account for 101.2% of Total 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Table Scans %Total PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 2,597 101.21 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by DB Blocks Changes 
+ % of Capture shows % of DB Block Changes for each top segment compared 
+ with total DB Block Changes for all segments captured by the Snapshot 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# DB Block Changes % of Capture PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 1,472,384 98.46 
+ &#160;
+ ** MISSING ** TEMP 
+ ** TRANSIENT: 4194432 ** MISSING ** UNDEFINED &#160; 4194432 5,408 0.36 
+ &#160;
+ SYS SYSAUX 
+ WRH$_SYSSTAT_PK WRH$_SYSSTAT_3457782515_MXSN INDEX PARTITION 72702 72702 5,232 0.35 
+ &#160;
+ SYS SYSAUX 
+ WRH$_LATCH_PK WRH$_LATCH_3457782515_MXSN INDEX PARTITION 72630 72630 2,400 0.16 
+ &#160;
+ SYS SYSTEM 
+ COL_USAGE$ &#160; TABLE 808 808 2,160 0.14 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Row Lock Waits 
+ No data exists for this section of the report.
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by ITL Waits 
+ No data exists for this section of the report.
+ Back to Segment Statistics 
+ Back to Top 
+ Segments by Buffer Busy Waits 
+ % of Capture shows % of Buffer Busy Waits for each top segment compared 
+ with total Buffer Busy Waits for all segments captured by the Snapshot 
+ When ** MISSING ** occurs, some of the object attributes may not be available 
+ Owner Tablespace Name Object Name Subobject Name Obj. Type Obj# Dataobj# Buffer Busy Waits % of Capture PDB Name 
+ TELCO USERS 
+ CDR_USAGE SYS_P576 TABLE PARTITION 73167 73167 5,702 99.93 
+ &#160;
+ SYS SYSTEM 
+ SEG$ &#160; TABLE 14 8 2 0.04 
+ &#160;
+ SYS SYSTEM 
+ UNDO$ &#160; TABLE 15 15 1 0.02 
+ &#160;
+ TELCO_LOAD USERS 
+ WORKLOAD_STATS &#160; TABLE 73147 73147 1 0.02 
+ &#160;
+ Back to Segment Statistics 
+ Back to Top 
+ Dictionary Cache Statistics 
+ Back to Top 
+ Dictionary Cache Stats 
+ &quot;Pct Misses&quot; should be very low (&lt; 2% in most cases) 
+ &quot;Final Usage&quot; is the number of cache entries being used 
+ Cache Get Requests Pct Miss Scan Reqs Pct Miss Mod Reqs Final Usage 
+ dc_awr_control 313 24.60 0 &#160; 14 1 
+ dc_global_oids 2,731 9.96 0 &#160; 0 19 
+ dc_histogram_data 344 45.06 0 &#160; 103 7 
+ dc_histogram_defs 4,583,596 1.99 0 &#160; 324 1,492 
+ dc_objects 5,268,277 0.45 0 &#160; 195 1,311 
+ dc_profiles 366 6.28 0 &#160; 0 1 
+ dc_props 950 99.79 0 &#160; 0 6 
+ dc_realtime_tabst 16 100.00 0 &#160; 0 0 
+ dc_rollback_segments 4,805 0.00 0 &#160; 12 45 
+ dc_segments 39,711 60.86 0 &#160; 218 164 
+ dc_sequences 514 88.13 0 &#160; 514 2 
+ dc_tablespace_quotas 19 47.37 0 &#160; 0 0 
+ dc_tablespaces 982,627 0.23 0 &#160; 0 8 
+ dc_users 9,562,722 0.04 2,860 5.45 0 36 
+ outstanding_alerts 27 100.00 0 &#160; 0 0 
+ sch_lj_oids 32 75.00 0 &#160; 0 3 
+ Back to Dictionary Cache Statistics 
+ Back to Top 
+ Library Cache Statistics 
+ Back to Top 
+ Library Cache Activity 
+ &quot;Pct Misses&quot; should be very low 
+ Namespace Get Requests Pct Miss Pin Requests Pct Miss Reloads Invali- dations 
+ ACCOUNT_STATUS 1,281 1.80 0 &#160; 0 0 
+ APP STATE 57 12.28 0 &#160; 0 0 
+ AUDIT POLICY 3,989 13.29 3,989 13.29 0 0 
+ BODY 1,904 9.03 2,826 11.04 173 0 
+ CLUSTER 4,828 0.68 4,828 0.60 0 0 
+ DBLINK 555 11.35 0 &#160; 0 0 
+ EDITION 227 41.85 454 41.85 0 0 
+ FED APP 2,455 6.15 2,455 6.31 4 0 
+ INDEX 2,285 20.18 2,259 48.03 600 0 
+ OBJECT ID 39 100.00 0 &#160; 0 0 
+ SCHEMA 17,540 0.48 0 &#160; 0 0 
+ SENSITIVE_TABLE 900 100.00 0 &#160; 0 0 
+ SQL AREA 2,428,551 63.68 7,423,929 36.15 223,785 126 
+ SQL AREA BUILD 994,561 99.96 0 &#160; 0 0 
+ SQL AREA STATS 876,411 94.60 876,565 94.60 5 0 
+ TABLE/PROCEDURE 1,054,717 1.26 5,823,943 0.74 21,988 0 
+ TRIGGER 360 22.50 351 22.22 0 0 
+ Back to Library Cache Statistics 
+ Back to Top 
+Replication Statistics (GoldenGate, XStream)
+ Replication System Resource Usage 
+ Replication SGA Usage 
+ Replication Foreground Wait Events 
+ Replication Background Wait Events 
+ Replication SQL ordered by Elapsed Time 
+ Replication SQL ordered by CPU Time 
+ Replication SQL ordered by User I/O Wait Time 
+ Replication SQL ordered by Executions 
+ GoldenGate Integrated Extract 
+ GoldenGate Integrated Replicat 
+ GoldenGate Replicat 
+ XStreamOUT Capture 
+ XStreamOUT Outbound Server 
+ XStreamIN 
+ Table Statistics by DML Operations 
+ Table Statistics by Conflict Resolutions 
+ Replication Large Transaction Statistics 
+ XStream Replication Long Running Transaction Statistics 
+ Complete List of SQL Text for Replication Statistics 
+ Back to Top 
+ Replication System Resource Usage 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication SGA Usage 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication Foreground Wait Events 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication Background Wait Events 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication SQL ordered by Elapsed Time 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication SQL ordered by CPU Time 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication SQL ordered by User I/O Wait Time 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication SQL ordered by Executions 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ GoldenGate Integrated Extract 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ GoldenGate Integrated Replicat 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ GoldenGate Replicat 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ XStreamOUT Capture 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ XStreamOUT Outbound Server 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ XStreamIN 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Table Statistics by DML Operations 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Table Statistics by Conflict Resolutions 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Replication Large Transaction Statistics 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ XStream Replication Long Running Transaction Statistics 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+ Complete List of SQL Text for Replication Statistics 
+ No data exists for this section of the report.
+ Back to Replication Statistics (GoldenGate, XStream) 
+ Back to Top 
+Initialization Parameters
+ Parameters modified by this container 
+ Parameters modified by other containers 
+ Multi-Valued Parameters modified by this container 
+ Multi-Valued Parameters modified by other containers 
+ Back to Top 
+ Parameters modified by this container 
+ This section shows all the modified initialization parameters that were in effect during the entire snapshot interval 
+ End Value is displayed only if the parameter value was modified within the snapshot interval 
+ Parameter Name Begin value End value (if different) PDB Name 
+ fast_start_parallel_rollback LOW &#160;&#160; 
+ &#160;
+ sga_target 0 &#160;&#160; 
+ &#160;
+ spatial_vector_acceleration TRUE &#160;&#160; 
+ &#160;
+ undo_tablespace UNDOTBS1 &#160;&#160; 
+ &#160;
+ Back to Initialization Parameters 
+ Back to Top 
+ Parameters modified by other containers 
+ This section shows all the modified initialization parameters that were in effect during the snapshot interval 
+ End Value is displayed only if the parameter value was changed within the snapshot interval 
+ Parameter Name Begin value End value (if different) PDB Name 
+ _instance_recovery_bloom_filter_size 1048576 &#160;&#160; 
+ &#160;
+ compatible 23.6.0 &#160;&#160; 
+ &#160;
+ control_files /opt/oracle/oradata/FREE/control01.ctl, /opt/oracle/oradata/FREE/control02.ctl &#160;&#160; 
+ &#160;
+ db_block_size 8192 &#160;&#160; 
+ &#160;
+ db_name FREE &#160;&#160; 
+ &#160;
+ diagnostic_dest /opt/oracle &#160;&#160; 
+ &#160;
+ dispatchers (PROTOCOL=TCP) (SERVICE=FREEXDB) &#160;&#160; 
+ &#160;
+ enable_pluggable_database TRUE &#160;&#160; 
+ &#160;
+ local_listener &#160;&#160; &#160;&#160; 
+ &#160;
+ nls_language AMERICAN &#160;&#160; 
+ &#160;
+ nls_territory AMERICA &#160;&#160; 
+ &#160;
+ open_cursors 300 &#160;&#160; 
+ &#160;
+ pga_aggregate_target 536870912 &#160;&#160; 
+ &#160;
+ processes 200 &#160;&#160; 
+ &#160;
+ remote_login_passwordfile EXCLUSIVE &#160;&#160; 
+ &#160;
+ Back to Initialization Parameters 
+ Back to Top 
+ Multi-Valued Parameters modified by this container 
+ No data exists for this section of the report.
+ Back to Initialization Parameters 
+ Back to Top 
+ Multi-Valued Parameters modified by other containers 
+ This section only displays parameters that have more than one value 
+ '(NULL)' indicates a missing parameter value 
+ A blank in the 'End Snapshot' indicates the same value as the 'Begin Snapshot' 
+ Parameter Name Begin value End value (if different) PDB Name 
+ control_files /opt/oracle/oradata/FREE/control01.ctl &#160;&#160; 
+ &#160;
+ control_files /opt/oracle/oradata/FREE/control02.ctl &#160;&#160; 
+ &#160;
+ Back to Initialization Parameters 
+ Back to Top 
+Active Session History (ASH) Report
+ Top SQL with Top Events 
+ Top SQL with Top Row Sources 
+ Top Sessions 
+ Top Blocking Sessions 
+ Top PL/SQL Procedures 
+ Top Events 
+ Top Event P1/P2/P3 Values 
+ Top DB Objects 
+ Activity Over Time 
+ Back to Top 
+ Top SQL with Top Events 
+ Top SQL statements by DB Time along with the top events by DB Time for those SQLs. 
+ % Activity is the percentage of DB Time due to the SQL. 
+ % Event is the percentage of DB Time due to the event that the SQL is waiting on. 
+ % Row Source is the percentage of DB Time due to the row source for the SQL waiting on the event. 
+ Executions is the number of executions of the SQL that were sampled in ASH. 
+ SQL ID Plan Hash Executions % Activity Event % Event Top Row Source % Row Source SQL Text 
+ 1ppfr2kwym0kf 1050735216 110 31.61 
+ CPU + Wait for CPU 31.61 TABLE ACCESS - FULL 31.61 
+ SELECT COUNT(*), NVL(SUM(charg... 
+ brbv6ht7tvju1 4271325393 20 6.61 
+ CPU + Wait for CPU 6.61 LOAD TABLE CONVENTIONAL 3.74 
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ 1va8kswj3qvwr &#160; 1 2.87 
+ CPU + Wait for CPU 2.87 ** Row Source Not Available ** 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ 7xkpjujn57ry6 &#160; 1 2.87 
+ CPU + Wait for CPU 2.87 ** Row Source Not Available ** 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ brxznk1n5dc8d &#160; 1 2.87 
+ CPU + Wait for CPU 2.87 ** Row Source Not Available ** 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top SQL with Top Row Sources 
+ Top SQL statements by DB Time along with the top row sources by DB Time for those SQLs. 
+ % Activity is the percentage of DB Time due to the SQL. 
+ % Row Source is the percentage of DB Time spent on the row source by that SQL. 
+ % Event is the percentage of DB Time spent on the event by the SQL executing the row source. 
+ Executions is the number of executions of the SQL that were sampled in ASH. 
+ SQL ID Plan Hash Executions % Activity Row Source % Row Source Top Event % Event SQL Text 
+ 1ppfr2kwym0kf 1050735216 110 31.61 
+ TABLE ACCESS - FULL 31.61 CPU + Wait for CPU 31.61 
+ SELECT COUNT(*), NVL(SUM(charg... 
+ brbv6ht7tvju1 4271325393 20 6.61 
+ LOAD TABLE CONVENTIONAL 3.74 CPU + Wait for CPU 3.74 
+ INSERT INTO TELCO.CDR_USAGE (C... 
+ brbv6ht7tvju1 4271325393 20 6.60919540229885057471264367816091954023 
+ INSERT STATEMENT 2.59 CPU + Wait for CPU 2.59 
+ 1va8kswj3qvwr &#160; 1 2.87 
+ ** Row Source Not Available ** 2.87 CPU + Wait for CPU 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ 7xkpjujn57ry6 &#160; 1 2.87 
+ ** Row Source Not Available ** 2.87 CPU + Wait for CPU 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ brxznk1n5dc8d &#160; 1 2.87 
+ ** Row Source Not Available ** 2.87 CPU + Wait for CPU 2.87 
+ DECLARE job BINARY_INTEGER := ... 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top Sessions 
+ '# Samples Active' shows the number of ASH samples in which the session was found waiting for that particular event. The percentage shown in this column is calculated with respect to wall clock time and not total database activity. 
+ 'XIDs' shows the number of distinct transaction IDs sampled in ASH when the session was waiting for that particular event 
+ Sid, Serial# % Activity Event % Event User Program # Samples Active XIDs 
+ 47, 8079 8.05 CPU + Wait for CPU 8.05 
+ SYS oracle@8512df493b78 (J007) 28/363 [ 8%] 0 
+ 223,54405 7.76 CPU + Wait for CPU 7.76 
+ SYS oracle@8512df493b78 (J001) 27/363 [ 7%] 0 
+ 68,30306 7.18 CPU + Wait for CPU 7.18 
+ SYS oracle@8512df493b78 (J00F) 25/363 [ 7%] 1 
+ 230,56264 7.18 CPU + Wait for CPU 6.61 
+ SYS oracle@8512df493b78 (J00E) 23/363 [ 6%] 0 
+ 66,48886 6.90 CPU + Wait for CPU 6.61 
+ SYS oracle@8512df493b78 (J00D) 23/363 [ 6%] 0 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top Blocking Sessions 
+ No data exists for this section of the report.
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top PL/SQL Procedures 
+ 'PL/SQL entry subprogram' represents the application's top-level entry-point (procedure, function, trigger, package initialization or RPC call) into PL/SQL. 
+ 'PL/SQL current subprogram' is the PL/SQL subprogram being executed at the point of sampling . If the value is 'SQL', it represents the percentage of time spent executing SQL for the particular PL/SQL entry subprogram 
+ PL/SQL Entry Subprogram % Activity PL/SQL Current Subprogram % Current 
+ TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION 99.14 
+ SQL 70.69 
+ TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION 99.13793103448275862068965517241379310345 
+ UNKNOWN_PLSQL_ID &lt;9131, 29&gt; 8.05 
+ TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION 99.13793103448275862068965517241379310345 
+ TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION 6.61 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top Events 
+ Top Events by DB Time 
+ % Activity is the percentage of DB Time due to the event 
+ Event Event Class Session Type % Activity Avg Active Sessions 
+ CPU + Wait for CPU CPU FOREGROUND 
+ 97.13 0.93 
+ resmgr:cpu quantum Scheduler FOREGROUND 
+ 1.15 0.01 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top Event P1/P2/P3 Values 
+ Top Events by DB Time and the top P1/P2/P3 values for those events. 
+ % Event is the percentage of DB Time due to the event 
+ % Activity is the percentage of DB Time due to the event with the given P1,P2,P3 Values. 
+ Event % Event P1, P2, P3 Values % Activity Parameter 1 Parameter 2 Parameter 3 
+ resmgr:cpu quantum 1.15 &quot;5&quot;,&quot;2&quot;,&quot;1&quot; 0.57 
+ pdb running pdb runnable reason 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Top DB Objects 
+ No data exists for this section of the report.
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ Activity Over Time 
+ Analysis period is divided into smaller time slots as indicated in the 'Slot Time (Duration)'. 
+ Top 3 events are reported in each of those slots 
+ 'Slot Count' shows the number of ASH samples in that slot 
+ 'Event Count' shows the number of ASH samples waiting for that event in that slot 
+ '% Event' is 'Event Count' over all ASH samples in the analysis period 
+ Slot Time (Duration) Slot Count Event Event Count % Event 
+ 16:05:05 (4.9 min) 18 CPU + Wait for CPU 18 5.17 
+ 16:10:00 (5.0 min) 22 CPU + Wait for CPU 22 6.32 
+ 16:15:00 (5.0 min) 31 CPU + Wait for CPU 28 8.05 
+ 16:15:00 (5.0 min) 31 latch: shared pool 2 0.57 
+ 16:15:00 (5.0 min) 31 library cache: mutex X 1 0.29 
+ 16:20:00 (5.0 min) 28 CPU + Wait for CPU 28 8.05 
+ 16:25:00 (5.0 min) 23 CPU + Wait for CPU 23 6.61 
+ 16:30:00 (5.0 min) 33 CPU + Wait for CPU 32 9.20 
+ 16:30:00 (5.0 min) 33 latch: shared pool 1 0.29 
+ 16:35:00 (5.0 min) 32 CPU + Wait for CPU 31 8.91 
+ 16:35:00 (5.0 min) 32 library cache: mutex X 1 0.29 
+ 16:40:00 (5.0 min) 30 CPU + Wait for CPU 30 8.62 
+ 16:45:00 (5.0 min) 30 CPU + Wait for CPU 30 8.62 
+ 16:50:00 (5.0 min) 35 CPU + Wait for CPU 35 10.06 
+ 16:55:00 (5.0 min) 27 CPU + Wait for CPU 27 7.76 
+ 17:00:00 (5.0 min) 38 CPU + Wait for CPU 34 9.77 
+ 17:00:00 (5.0 min) 38 resmgr:cpu quantum 4 1.15 
+ 17:05:00 (39 secs) 1 CPU + Wait for CPU 1 0.29 
+ Back to Active Session History (ASH) Report 
+ Back to Top 
+ADDM Reports
+ ADDM Reports 
+ Back to Top 
+ ADDM Task ADDM:3457782515_1_9 
+ ADDM Report for Task &apos;ADDM:3457782515_1_9&apos;
+ ------------------------------------------
+Analysis Period
+---------------
+AWR snapshot range from 8 to 9.
+Time period starts at 19-OCT-26 05.00.58 PM
+Time period ends at 19-OCT-26 05.05.40 PM
+Analysis Target
+---------------
+Database &apos;FREE&apos; with DB ID 3457782515.
+Database version 23.0.0.0.0.
+ADDM performed an analysis of instance FREE, numbered 1 and hosted at
+8512df493b78.
+ADDM detected that the system is a PDB.
+Activity During the Analysis Period
+-----------------------------------
+Total database time was 582 seconds.
+The average number of active sessions was 2.06.
+Summary of Findings
+-------------------
+ Description Active Sessions Recommendations
+ Percent of Activity
+ ------------------------------- ------------------- ---------------
+1 Top SQL Statements 1.1 | 53.12 1
+2 PL/SQL Execution .84 | 40.62 1
+3 Resource Manager CPU Throttling .41 | 19.76 2
+4 Hard Parse .32 | 15.42 0
+5 CPU Usage .26 | 12.44 2
+6 Soft Parse .08 | 3.67 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Findings and Recommendations
+ ----------------------------
+Finding 1: Top SQL Statements
+Impact is 1.1 active sessions, 53.12% of total activity.
+--------------------------------------------------------
+SQL statements consuming significant database time were found. These
+statements offer a good opportunity for performance improvement.
+ Recommendation 1: SQL Tuning
+ Estimated benefit is 1.1 active sessions, 53.12% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+ &quot;1ppfr2kwym0kf&quot;.
+ Related Object
+ SQL statement with SQL_ID 1ppfr2kwym0kf.
+ SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE
+ msisdn = :m AND call_start &gt;= SYSDATE - 1/24
+ Rationale
+ The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+ This part of database time may be improved by the SQL Tuning Advisor.
+ Rationale
+ Database time for this SQL was divided as follows: 100% for SQL
+ execution, 0% for parsing, 0% for PL/SQL execution and 0% for Java
+ execution.
+ Rationale
+ SQL statement with SQL_ID &quot;1ppfr2kwym0kf&quot; was executed 2734 times and
+ had an average elapsed time of 0.061 seconds.
+Finding 2: PL/SQL Execution
+Impact is .84 active sessions, 40.62% of total activity.
+--------------------------------------------------------
+PL/SQL execution consumed significant database time.
+ Recommendation 1: SQL Tuning
+ Estimated benefit is .84 active sessions, 40.62% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Tune the entry point PL/SQL &quot;TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION&quot; of
+ type &quot;PACKAGE&quot; and ID 73149. Refer to the PL/SQL documentation for
+ addition information.
+ Rationale
+ Subprogam ID 29 of PL/SQL ID 9131 spent 163 seconds in execution.
+Finding 3: Resource Manager CPU Throttling
+Impact is .41 active sessions, 19.76% of total activity.
+--------------------------------------------------------
+CPU Resource Manager is enabled and database sessions were found waiting for
+CPU.
+ Recommendation 1: Database Configuration
+ Estimated benefit is .41 active sessions, 19.76% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Session CPU consumption was throttled by the Oracle Resource Manager.
+ Consider revising the resource plan that was active during the analysis
+ period.
+ Recommendation 2: Database Configuration
+ Estimated benefit is .41 active sessions, 19.76% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Consider increasing the CPU quota for this PDB. This action must be done
+ in the CDB root.
+ Symptoms That Led to the Finding:
+ ---------------------------------
+ Wait class &quot;Scheduler&quot; was consuming significant database time.
+ Impact is .41 active sessions, 19.76% of total activity.
+Finding 4: Hard Parse
+Impact is .32 active sessions, 15.42% of total activity.
+--------------------------------------------------------
+Hard parsing of SQL statements was consuming significant database time.
+Hard parses due to cursor environment mismatch were not consuming significant
+database time.
+Hard parsing SQL statements that encountered parse errors was not consuming
+significant database time.
+Hard parses due to literal usage and cursor invalidation were not consuming
+significant database time.
+ No recommendations are available.
+Finding 5: CPU Usage
+Impact is .26 active sessions, 12.44% of total activity.
+--------------------------------------------------------
+Time spent on CPU by the DB on this instance was responsible for a substantial
+part of database time.
+ Recommendation 1: Application Analysis
+ Estimated benefit is 1.81 active sessions, 87.5% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Look at the &quot;Top SQL Statements&quot; finding for SQL statements consuming
+ significant time on CPU. For example, the SELECT statement with SQL_ID
+ &quot;1ppfr2kwym0kf&quot; is responsible for 60% of CPU usage during the analysis
+ period.
+ Recommendation 2: Application Analysis
+ Estimated benefit is .26 active sessions, 12.44% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Parsing SQL statements were consuming significant CPU. Please refer to
+ other findings in this task about parsing for further details.
+Finding 6: Soft Parse
+Impact is .08 active sessions, 3.67% of total activity.
+-------------------------------------------------------
+Soft parsing of SQL statements was consuming significant database time.
+ Recommendation 1: Application Analysis
+ Estimated benefit is .08 active sessions, 3.67% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Investigate application logic to keep open the frequently used cursors.
+ Note that cursors are closed by both cursor close calls and session
+ disconnects.
+ Recommendation 2: Database Configuration
+ Estimated benefit is .08 active sessions, 3.67% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Consider increasing the session cursor cache size by increasing the
+ value of parameter &quot;session_cached_cursors&quot;.
+ Rationale
+ The value of parameter &quot;session_cached_cursors&quot; was &quot;50&quot; during the
+ analysis period.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Additional Information
+ ----------------------
+Miscellaneous Information
+-------------------------
+Wait class &quot;Application&quot; was not consuming significant database time.
+Wait class &quot;Commit&quot; was not consuming significant database time.
+Wait class &quot;Concurrency&quot; was not consuming significant database time.
+Wait class &quot;Configuration&quot; was not consuming significant database time.
+Wait class &quot;Network&quot; was not consuming significant database time.
+Wait class &quot;User I/O&quot; was not consuming significant database time.
+Session connect and disconnect calls were not consuming significant database
+time.
+ ADDM Task ADDM:3457782515_1_8 
+ ADDM Report for Task &apos;ADDM:3457782515_1_8&apos;
+ ------------------------------------------
+Analysis Period
+---------------
+AWR snapshot range from 7 to 8.
+Time period starts at 19-OCT-26 04.05.06 PM
+Time period ends at 19-OCT-26 05.00.58 PM
+Analysis Target
+---------------
+Database &apos;FREE&apos; with DB ID 3457782515.
+Database version 23.0.0.0.0.
+ADDM performed an analysis of instance FREE, numbered 1 and hosted at
+8512df493b78.
+ADDM detected that the system is a PDB.
+Activity During the Analysis Period
+-----------------------------------
+Total database time was 4261 seconds.
+The average number of active sessions was 1.27.
+Summary of Findings
+-------------------
+ Description Active Sessions Recommendations
+ Percent of Activity
+ ------------------------------- ------------------- ---------------
+1 Top SQL Statements .59 | 46.03 5
+2 PL/SQL Execution .35 | 27.3 1
+3 Hard Parse Due to Literal Usage .3 | 23.7 1
+4 CPU Usage .28 | 22.08 2
+5 Soft Parse .08 | 6.08 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Findings and Recommendations
+ ----------------------------
+Finding 1: Top SQL Statements
+Impact is .59 active sessions, 46.03% of total activity.
+--------------------------------------------------------
+SQL statements consuming significant database time were found. These
+statements offer a good opportunity for performance improvement.
+ Recommendation 1: SQL Tuning
+ Estimated benefit is .38 active sessions, 29.52% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Run SQL Tuning Advisor on the SELECT statement with SQL_ID
+ &quot;1ppfr2kwym0kf&quot;.
+ Related Object
+ SQL statement with SQL_ID 1ppfr2kwym0kf.
+ SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE
+ msisdn = :m AND call_start &gt;= SYSDATE - 1/24
+ Rationale
+ The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+ This part of database time may be improved by the SQL Tuning Advisor.
+ Rationale
+ Database time for this SQL was divided as follows: 100% for SQL
+ execution, 0% for parsing, 0% for PL/SQL execution and 0% for Java
+ execution.
+ Rationale
+ SQL statement with SQL_ID &quot;1ppfr2kwym0kf&quot; was executed 33633 times and
+ had an average elapsed time of 0.027 seconds.
+ Recommendation 2: SQL Tuning
+ Estimated benefit is .09 active sessions, 7.3% of total activity.
+ -----------------------------------------------------------------
+ Action
+ Run SQL Tuning Advisor on the INSERT statement with SQL_ID
+ &quot;brbv6ht7tvju1&quot;.
+ Related Object
+ SQL statement with SQL_ID brbv6ht7tvju1.
+ INSERT INTO TELCO.CDR_USAGE (CALL_ID, MSISDN, CELL_ID, CALL_START,
+ DURATION_SEC, CHARGE_AMT) VALUES (TELCO.CDR_SEQ.NEXTVAL, :B4 , :B3 ,
+ SYSDATE, :B2 , :B1 ) RETURNING ROWID INTO :O0
+ Rationale
+ The SQL spent 100% of its database time on CPU, I/O and Cluster waits.
+ This part of database time may be improved by the SQL Tuning Advisor.
+ Rationale
+ Database time for this SQL was divided as follows: 100% for SQL
+ execution, 0% for parsing, 0% for PL/SQL execution and 0% for Java
+ execution.
+ Rationale
+ SQL statement with SQL_ID &quot;brbv6ht7tvju1&quot; was executed 1446555 times and
+ had an average elapsed time of 0.00012 seconds.
+ Recommendation 3: SQL Tuning
+ Estimated benefit is .04 active sessions, 3.17% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Investigate the PL/SQL statement with SQL_ID &quot;1va8kswj3qvwr&quot; for
+ possible performance improvements. You can supplement the information
+ given here with an ASH report for this SQL_ID.
+ Related Object
+ SQL statement with SQL_ID 1va8kswj3qvwr.
+ DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME
+ ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) :=
+ :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner
+ VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE :=
+ :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE :=
+ :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE :=
+ :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end;
+ chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128)
+ := :credown; credential_name VARCHAR2(128) := :crednam;
+ destination_owner VARCHAR2(128) := :destown; destination_name
+ VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid;
+ log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1,
+ 5, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN
+ :b := 1; ELSE :b := 0; END IF; END;
+ Rationale
+ The SQL Tuning Advisor cannot operate on PL/SQL statements.
+ Rationale
+ Database time for this SQL was divided as follows: 0% for SQL execution,
+ 10% for parsing, 90% for PL/SQL execution and 0% for Java execution.
+ Recommendation 4: SQL Tuning
+ Estimated benefit is .04 active sessions, 3.17% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Investigate the PL/SQL statement with SQL_ID &quot;7xkpjujn57ry6&quot; for
+ possible performance improvements. You can supplement the information
+ given here with an ASH report for this SQL_ID.
+ Related Object
+ SQL statement with SQL_ID 7xkpjujn57ry6.
+ DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME
+ ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) :=
+ :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner
+ VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE :=
+ :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE :=
+ :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE :=
+ :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end;
+ chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128)
+ := :credown; credential_name VARCHAR2(128) := :crednam;
+ destination_owner VARCHAR2(128) := :destown; destination_name
+ VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid;
+ log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1,
+ 4, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN
+ :b := 1; ELSE :b := 0; END IF; END;
+ Rationale
+ The SQL Tuning Advisor cannot operate on PL/SQL statements.
+ Rationale
+ Database time for this SQL was divided as follows: 10% for SQL
+ execution, 30% for parsing, 60% for PL/SQL execution and 0% for Java
+ execution.
+ Recommendation 5: SQL Tuning
+ Estimated benefit is .04 active sessions, 2.86% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Investigate the PL/SQL statement with SQL_ID &quot;91zcj4r176vm7&quot; for
+ possible performance improvements. You can supplement the information
+ given here with an ASH report for this SQL_ID.
+ Related Object
+ SQL statement with SQL_ID 91zcj4r176vm7.
+ DECLARE job BINARY_INTEGER := :job; next_date TIMESTAMP WITH TIME
+ ZONE := :mydate; broken BOOLEAN := FALSE; job_name VARCHAR2(128) :=
+ :job_name; job_subname VARCHAR2(128) := :job_subname; job_owner
+ VARCHAR2(128) := :job_owner; job_start TIMESTAMP WITH TIME ZONE :=
+ :job_start; job_scheduled_start TIMESTAMP WITH TIME ZONE :=
+ :job_scheduled_start; window_start TIMESTAMP WITH TIME ZONE :=
+ :window_start; window_end TIMESTAMP WITH TIME ZONE := :window_end;
+ chain_id VARCHAR2(14) := :chainid; credential_owner VARCHAR2(128)
+ := :credown; credential_name VARCHAR2(128) := :crednam;
+ destination_owner VARCHAR2(128) := :destown; destination_name
+ VARCHAR2(128) := :destnam; job_dest_id varchar2(14) := :jdestid;
+ log_id number := :log_id; BEGIN BEGIN telco_workload.run_session(1,
+ 11, 500, 16, 3900, NULL); END; :mydate := next_date; IF broken THEN
+ :b := 1; ELSE :b := 0; END IF; END;
+ Rationale
+ The SQL Tuning Advisor cannot operate on PL/SQL statements.
+ Rationale
+ Database time for this SQL was divided as follows: 1% for SQL execution,
+ 11% for parsing, 88% for PL/SQL execution and 0% for Java execution.
+Finding 2: PL/SQL Execution
+Impact is .35 active sessions, 27.3% of total activity.
+-------------------------------------------------------
+PL/SQL execution consumed significant database time.
+ Recommendation 1: SQL Tuning
+ Estimated benefit is .35 active sessions, 27.3% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Tune the entry point PL/SQL &quot;TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION&quot; of
+ type &quot;PACKAGE&quot; and ID 73149. Refer to the PL/SQL documentation for
+ addition information.
+ Rationale
+ Subprogam ID 8 of PL/SQL ID 73149 spent 311 seconds in execution.
+ Rationale
+ 284 seconds spent in executing PL/SQL
+ &quot;TELCO_LOAD.TELCO_WORKLOAD.RUN_SESSION&quot; of type &quot;PACKAGE&quot; and ID 73149.
+ Rationale
+ Subprogam ID 29 of PL/SQL ID 9131 spent 257 seconds in execution.
+ Rationale
+ 175 seconds spent in executing PL/SQL
+ &quot;SYS.DBMS_DICTIONARY_CHECK.PARTSUBPARTMISMATCH&quot; of type &quot;PACKAGE&quot; and ID
+ 11300.
+ Rationale
+ Subprogam ID 12 of PL/SQL ID 73149 spent 121 seconds in execution.
+Finding 3: Hard Parse Due to Literal Usage
+Impact is .3 active sessions, 23.7% of total activity.
+------------------------------------------------------
+SQL statements were not shared due to the usage of literals. This resulted in
+additional hard parses which were consuming significant database time.
+ Recommendation 1: Application Analysis
+ Estimated benefit is .3 active sessions, 23.7% of total activity.
+ -----------------------------------------------------------------
+ Action
+ Investigate application logic for possible use of bind variables instead
+ of literals.
+ Action
+ Alternatively, you may set the parameter &quot;cursor_sharing&quot; to &quot;force&quot;.
+ Rationale
+ At least 59 SQL statements with FORCE_MATCHING_SIGNATURE
+ 14010260740968950482 and PLAN_HASH_VALUE 2746544118 were found to be
+ using literals. An example is SQL statement with SQL_ID &quot;1757pb5rp40ft&quot;.
+ Related Object
+ SQL statement with SQL_ID 1757pb5rp40ft.
+ SELECT msisdn, tariff_code, status FROM TELCO.subscriber WHERE
+ subscriber_id = 2431
+ Rationale
+ At least 59 SQL statements with FORCE_MATCHING_SIGNATURE
+ 14010260740968950482 and PLAN_HASH_VALUE 2746544118 were found to be
+ using literals. An example is SQL statement with SQL_ID &quot;a4zak5905p5f2&quot;.
+ Related Object
+ SQL statement with SQL_ID a4zak5905p5f2.
+ Symptoms That Led to the Finding:
+ ---------------------------------
+ Hard parsing of SQL statements was consuming significant database time.
+ Impact is .3 active sessions, 23.71% of total activity.
+Finding 4: CPU Usage
+Impact is .28 active sessions, 22.08% of total activity.
+--------------------------------------------------------
+Time spent on CPU by the DB on this instance was responsible for a substantial
+part of database time.
+ Recommendation 1: Application Analysis
+ Estimated benefit is 1.25 active sessions, 98.41% of total activity.
+ --------------------------------------------------------------------
+ Action
+ Look at the &quot;Top SQL Statements&quot; finding for SQL statements consuming
+ significant time on CPU. For example, the SELECT statement with SQL_ID
+ &quot;1ppfr2kwym0kf&quot; is responsible for 30% of CPU usage during the analysis
+ period.
+ Recommendation 2: Application Analysis
+ Estimated benefit is .28 active sessions, 22.08% of total activity.
+ -------------------------------------------------------------------
+ Action
+ Parsing SQL statements were consuming significant CPU. Please refer to
+ other findings in this task about parsing for further details.
+Finding 5: Soft Parse
+Impact is .08 active sessions, 6.08% of total activity.
+-------------------------------------------------------
+Soft parsing of SQL statements was consuming significant database time.
+ Recommendation 1: Application Analysis
+ Estimated benefit is .08 active sessions, 6.08% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Investigate application logic to keep open the frequently used cursors.
+ Note that cursors are closed by both cursor close calls and session
+ disconnects.
+ Recommendation 2: Database Configuration
+ Estimated benefit is .08 active sessions, 6.08% of total activity.
+ ------------------------------------------------------------------
+ Action
+ Consider increasing the session cursor cache size by increasing the
+ value of parameter &quot;session_cached_cursors&quot;.
+ Rationale
+ The value of parameter &quot;session_cached_cursors&quot; was &quot;50&quot; during the
+ analysis period.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Additional Information
+ ----------------------
+Miscellaneous Information
+-------------------------
+Wait class &quot;Application&quot; was not consuming significant database time.
+Wait class &quot;Commit&quot; was not consuming significant database time.
+Wait class &quot;Concurrency&quot; was not consuming significant database time.
+Wait class &quot;Configuration&quot; was not consuming significant database time.
+Wait class &quot;Network&quot; was not consuming significant database time.
+Wait class &quot;User I/O&quot; was not consuming significant database time.
+Session connect and disconnect calls were not consuming significant database
+time.
+ Back to ADDM Reports 
+ Back to Top 
+Report Footnotes
+ Report Footnotes 
+ Back to Top 
+ Report Footnotes 
+ This section contains footnotes used by this report 
+ [1]. The elapsed time statistic actually shows the measured database time. 
+ Back to Report Footnotes 
+ Back to Top 
+End of Report

@@ -1,0 +1,70 @@
+
+Session altered.
+
+== 1) SQL text
+
+SQL_ID	      SQL_TEXT
+------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+brbv6ht7tvju1 INSERT INTO TELCO.CDR_USAGE (CALL_ID, MSISDN, CELL_ID, CALL_START, DURATION_SEC, CHARGE_AMT) VALUES (TELCO.CDR_SEQ.NEXTVAL, :B4 , :B3 , SYSDATE, :B2 , :B1 ) RETURNING ROWID INTO :O0
+1ppfr2kwym0kf SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE msisdn = :m AND call_start >= SYSDATE - 1/24
+brbv6ht7tvju1 INSERT INTO TELCO.CDR_USAGE (CALL_ID, MSISDN, CELL_ID, CALL_START, DURATION_SEC, CHARGE_AMT) VALUES (TELCO.CDR_SEQ.NEXTVAL, :B4 , :B3 , SYSDATE, :B2 , :B1 ) RETURNING ROWID INTO :O0
+1ppfr2kwym0kf SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE msisdn = :m AND call_start >= SYSDATE - 1/24
+
+== 2) plan with predicates
+
+PLAN_TABLE_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL_ID 1ppfr2kwym0kf
+--------------------
+SELECT COUNT(*), NVL(SUM(charge_amt), 0) FROM TELCO.cdr_usage WHERE
+msisdn = :m AND call_start >= SYSDATE - 1/24
+
+Plan hash value: 1050735216
+
+-------------------------------------------------------------------------------------------------------
+| Id  | Operation		  | Name      | Rows  | Bytes | Cost (%CPU)| Time     | Pstart| Pstop |
+-------------------------------------------------------------------------------------------------------
+|   0 | SELECT STATEMENT	  |	      |       |       |   274 (100)|	      |       |       |
+|   1 |  SORT AGGREGATE 	  |	      |     1 |    31 | 	   |	      |       |       |
+|   2 |   PARTITION RANGE ITERATOR|	      |     1 |    31 |   274	(0)| 00:00:01 |   KEY |1048575|
+|*  3 |    TABLE ACCESS FULL	  | CDR_USAGE |     1 |    31 |   274	(0)| 00:00:01 |   KEY |1048575|
+-------------------------------------------------------------------------------------------------------
+
+Predicate Information (identified by operation id):
+---------------------------------------------------
+
+   3 - filter(("MSISDN"=:M AND "CALL_START">=SYSDATE@!-.041666666666666666666666666666666666666
+	      7))
+
+Note
+-----
+   - dynamic statistics used: dynamic sampling (level=2)
+
+
+26 rows selected.
+
+== 3) ASH literal groups (same signature, many sql_ids)
+
+       FMS DISTINCT_SQL_IDS    SAMPLES
+---------- ---------------- ----------
+1.4010E+19		102	   103
+
+== 4) table sizes
+
+Session altered.
+
+
+TABLE_NAME															   NUM_ROWS	BLOCKS PAR
+-------------------------------------------------------------------------------------------------------------------------------- ---------- ---------- ---
+SUBSCRIBER															     200000	  1277 NO
+CDR_USAGE																	       YES
+
+
+INDEX_NAME
+--------------------------------------------------------------------------------------------------------------------------------
+TABLE_NAME															 UNIQUENES
+-------------------------------------------------------------------------------------------------------------------------------- ---------
+SYS_C008652
+SUBSCRIBER															 UNIQUE
+
+

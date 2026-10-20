@@ -1,0 +1,84 @@
+
+Session altered.
+
+=== Count of SUBSCRIBER
+
+SUBSCRIBER_ROWS
+---------------
+	      0
+
+=== Columns of SUBSCRIBER
+
+COLUMN_NAME
+--------------------------------------------------------------------------------------------------------------------------------
+DATA_TYPE															 DATA_LENGTH N
+-------------------------------------------------------------------------------------------------------------------------------- ----------- -
+SUBSCRIBER_ID
+NUMBER																	  22 N
+
+MSISDN
+VARCHAR2																  15 Y
+
+TARIFF_CODE
+VARCHAR2																  10 Y
+
+STATUS
+VARCHAR2																  10 Y
+
+CREATED_AT
+DATE																	   7 Y
+
+
+=== Columns of CDR_USAGE
+
+COLUMN_NAME
+--------------------------------------------------------------------------------------------------------------------------------
+DATA_TYPE															 DATA_LENGTH N
+-------------------------------------------------------------------------------------------------------------------------------- ----------- -
+CALL_ID
+NUMBER																	  22 Y
+
+MSISDN
+VARCHAR2																  15 Y
+
+CELL_ID
+NUMBER																	  22 Y
+
+CALL_START
+DATE																	   7 Y
+
+DURATION_SEC
+NUMBER																	  22 Y
+
+CHARGE_AMT
+NUMBER																	  22 Y
+
+
+6 rows selected.
+
+=== Constraints of SUBSCRIBER
+ WHERE dc.owner = 'TELCO' AND dc.table_name = 'SUBSCRIBER'
+       *
+ERROR at line 4:
+ORA-25154: column part of USING clause cannot have qualifier
+Help: https://docs.oracle.com/error-help/db/ora-25154/
+
+
+=== Indexes on CDR_USAGE
+SELECT index_name, index_type, uniqueness, column_name, column_position
+                               *
+ERROR at line 1:
+ORA-00904: "UNIQUENESS": invalid identifier
+Help: https://docs.oracle.com/error-help/db/ora-00904/
+
+
+=== Partitioning of CDR_USAGE
+
+PARTITION_NAME															 PARTITION_POSITION
+-------------------------------------------------------------------------------------------------------------------------------- ------------------
+HIGH_VALUE
+--------------------------------------------------------------------------------
+P_INIT																		  1
+TO_DATE(' 2026-01-01 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIA
+
+

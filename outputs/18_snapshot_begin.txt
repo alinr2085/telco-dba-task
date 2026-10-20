@@ -1,0 +1,16 @@
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+   SNAP_ID BEGIN_INTERVAL_TIME
+---------- ---------------------------------------------------------------------------
+END_INTERVAL_TIME
+---------------------------------------------------------------------------
+	 7 19-OCT-26 04.00.51.515 PM
+19-OCT-26 04.05.05.676 PM
+
+
+=== SNAPSHOT BEGIN TAKEN AT: 2026-10-19 16:05:08 UTC ===

@@ -1,0 +1,32 @@
+== متن کامل query سنگین
+ CPU + Wait for CPU 10.62 TABLE ACCESS - FULL 10.62 
+ SELECT COUNT(*), NVL(SUM(charg... FREEPDB1 
+ brbv6ht7tvju1 4271325393 25 3.31 
+--
+ 1ppfr2kwym0kf 1050735216 93 10.62 
+ TABLE ACCESS - FULL 10.62 CPU + Wait for CPU 10.62 
+ SELECT COUNT(*), NVL(SUM(charg... FREEPDB1 
+ brbv6ht7tvju1 4271325393 25 3.31 
+== SQL ordered by Parse Calls
+ SQL ordered by Parse Calls 
+ SQL ordered by Sharable Memory 
+ SQL ordered by Parse Calls 
+ Total Parse Calls: 2,104,540 
+ Captured SQL account for 4.4% of Total 
+ Parse Calls Executions % Total Parses SQL Id SQL Module PDB Name SQL Text 
+ 12,792 36,193 0.61 1ppfr2kwym0kf 
+DBMS_SCHEDULER
+FREEPDB1
+ SELECT COUNT(*), NVL(SUM(charg... 
+ 12,248 12,248 0.58 1kj22kmw7u7g5 
+ &#160;
+CDB$ROOT
+ select spare3 from sensitive_f... 
+== SQL ordered by Version Count
+ SQL ordered by Version Count 
+ Complete List of SQL Text 
+ SQL ordered by Version Count 
+ No data exists for this section of the report.
+ Back to SQL Statistics 
+ Back to Top 
+ Complete List of SQL Text 

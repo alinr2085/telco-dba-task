@@ -1,0 +1,5 @@
+nohup: ignoring input
+Waiting 2915 seconds until 2026-10-19 17:03:51 UTC...
+=== SCRIPT START: 2026-10-19 17:03:51 UTC ===
+=== TARGET TIME: 2026-10-19 17:03:51 UTC ===
+./scripts/snapshot_at.sh: line 24: sqlsrc: command not found

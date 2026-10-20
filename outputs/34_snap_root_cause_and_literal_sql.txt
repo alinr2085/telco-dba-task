@@ -1,0 +1,29 @@
+
+Session altered.
+
+== 1) all snapshots around load window, no dbid filter
+
+    CON_ID	 DBID	 SNAP_ID END_TIME
+---------- ---------- ---------- -----------
+	 0 1509902213	       6 19 16:00:51
+	 3 3457782515	       6 19 16:00:51
+	 3 3457782515	       7 19 16:05:05
+	 0 1509902213	       7 19 17:00:57
+	 3 3457782515	       8 19 17:00:57
+	 3 3457782515	       9 19 17:05:39
+	 0 1509902213	       8 19 22:19:06
+	 3 3457782515	      10 19 22:19:07
+	 0 1509902213	       9 19 22:35:54
+	 3 3457782515	      11 19 22:35:56
+
+10 rows selected.
+
+== 2) sample literal SQLs (same signature, different sql_id)
+
+SQL_ID	      TXT
+------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1757pb5rp40ft SELECT msisdn, tariff_code, status FROM TELCO.subscriber WHERE subscriber_id = 2431
+81b4m2uah857j SELECT msisdn, tariff_code, status FROM TELCO.subscriber WHERE subscriber_id = 1177
+9707wrf32r5k6 SELECT msisdn, tariff_code, status FROM TELCO.subscriber WHERE subscriber_id = 3701
+dhptg2hm9s0gp SELECT msisdn, tariff_code, status FROM TELCO.subscriber WHERE subscriber_id = 885
+
