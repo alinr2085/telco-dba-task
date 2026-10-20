@@ -33,7 +33,7 @@
 ```
 
 ## 3. SRC configuration (evidence in `outputs/`)
-- ARCHIVELOG: `SELECT log_mode FROM v$database;` returns ARCHIVELOG (see `outputs/01_redo_final.txt` and `outputs/02_fra_check.txt`).
+- ARCHIVELOG: `SELECT log_mode FROM v$database;` returns ARCHIVELOG (see `outputs/02_fra_check.txt`).
 - FRA limited to 8 GB (`outputs/02_fra_check.txt`):
 ```sql
   ALTER SYSTEM SET db_recovery_file_dest_size = 8G SCOPE = BOTH;
