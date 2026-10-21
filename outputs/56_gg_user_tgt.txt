@@ -1,0 +1,47 @@
+
+Session altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+== check
+
+USERNAME
+--------------------------------------------------------------------------------------------------------------------------------
+PROFILE 															 ACCOUNT_STATUS
+-------------------------------------------------------------------------------------------------------------------------------- --------------------------------
+GGAPPLY
+APP_PROFILE															 OPEN
+
+
+
+GRANTED_ROLE
+--------------------------------------------------------------------------------------------------------------------------------
+OGG_APPLY
+
+
+TABLE_NAME															 PRIVILEGE
+-------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------
+CDR_USAGE															 DELETE
+CDR_USAGE															 INSERT
+CDR_USAGE															 SELECT
+CDR_USAGE															 UPDATE
+SUBSCRIBER															 DELETE
+SUBSCRIBER															 INSERT
+SUBSCRIBER															 SELECT
+SUBSCRIBER															 UPDATE
+
+8 rows selected.
+
