@@ -25,3 +25,26 @@
 - ADDM "Sequence Usage": the `CDR_SEQ` cache was already 1000 and the related wait was 0.3% of DB time, so it was rejected. The finding also disappeared in run 2.
 
 (GoldenGate: to be added.)
+
+## GoldenGate events
+
+### GG1 - Image pull failed with 401
+Symptom: docker pull returned 401 (outputs/49). Causes: I first used the wrong image name (goldengate-free instead of goldengate-oracle-free) and no Oracle account was logged in. Fix: created an Oracle account, accepted the terms, docker login, used the right image name (outputs/50, 51).
+
+### GG2 - Admin password rejected by the container
+The OGG_ADMIN_PWD did not meet the password policy of the image. Fix: validated the password first, recreated the container and its volumes.
+
+### GG3 - EXT1 abended with OGG-02718
+Cause: SOURCECATALOG in the parameter file is not allowed when the process is connected directly to the PDB. Fix: removed SOURCECATALOG from EXT1.prm and REP1.prm. A duplicated EXTRACT line (warning OGG-10173) was also cleaned.
+
+### GG4 - REP1 abended with ORA-14402 on the first smoke test
+Cause: SRC still held old workload data with duplicated CALL_IDs, so KEYCOLS(CALL_ID) matched several rows and an UPDATE tried to move a row between interval partitions. Fix: cleaned both databases, deleted and recreated REP1, repeated the test (failing run kept as evidence in outputs/58, clean run in outputs/61).
+
+### GG5 - FRA was 67% full before the GG run
+FRA held 134 archived logs from the earlier runs (5494 of 8192 MB, nothing reclaimable because no backup exists). Fix: RMAN DELETE of old archived logs, then scripts/15_fra_housekeeping.sh during the run. Side effect: point-in-time recovery for the deleted period is gone (lab only, no backups). RMAN-08137 showed that Oracle itself protects the logs the Extract still needs.
+
+### GG6 - Replicat fell behind during the workload
+Replicat lag grew from 866 s to about 2764 s and a backlog of about 1.06 million CDR_USAGE rows existed at the end of the load. Probable cause: no index on CDR_USAGE (task rule), so updates/deletes on the target are slow. Not proven with SQL statistics. Details and numbers: docs/part1_gg_sync_report.md.
+
+### GG7 - Evidence file overwritten
+One lag output file (outputs/64_gg_lag_mid.txt) was overwritten with a later measurement; it was renamed to outputs/65_gg_lag_end.txt. The mid-run values are taken from outputs/63_gg_lag_samples.csv instead.

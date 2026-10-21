@@ -59,3 +59,21 @@
 
 ## 6. Rebuild order (scripts)
 `01_check_pdb.sql` -> `02_create_schema.sql` (SRC and TGT) -> `03_security_check.sql` -> `04_security.sql` (SRC and TGT) -> workload (Part 2) -> `07_assign_profile.sql`.
+
+## GoldenGate (SRC -> TGT, unidirectional)
+
+Product: Oracle GoldenGate Free (Microservices architecture), image `goldengate-oracle-free` from Oracle Container Registry, container `gg`, network `telco-net`, web UI on ports 8080/8443 (Administration Service). The task text says "Classic" but the diagram text says "Microservices 23ai"; I used Microservices because it is the image available. Clarification email to the company: pending.
+
+Steps (scripts in scripts/, evidence in outputs/):
+1. Prepare SRC: ARCHIVELOG, FORCE LOGGING, supplemental logging, ENABLE_GOLDENGATE_REPLICATION - scripts/08_gg_prepare_src.sql (outputs/52). Prepare TGT: scripts/09_gg_prepare_tgt.sql (outputs/53).
+2. Least-privilege GG users, no SYS/SYSTEM inside GG: GGCAPTURE on SRC (role OGG_CAPTURE) - scripts/10_gg_user_src.sql; GGAPPLY on TGT (role OGG_APPLY) - scripts/11_gg_user_tgt.sql; grants for the checkpoint table - scripts/12_gg_apply_checkpoint_grants.sql (outputs/54-57). Passwords come from untracked .env files, never from the repo.
+3. In the Administration Service: credential aliases src_ggcapture and tgt_ggapply (domain OracleGoldenGate), checkpoint table, then the two processes.
+4. EXT1 (Integrated Extract), trail `aa`:
+   EXTRACT EXT1 / USERIDALIAS src_ggcapture DOMAIN OracleGoldenGate / EXTTRAIL aa / TABLE TELCO.SUBSCRIBER; / TABLE TELCO.CDR_USAGE;
+5. REP1 (Parallel Nonintegrated Replicat):
+   REPLICAT REP1 / USERIDALIAS tgt_ggapply DOMAIN OracleGoldenGate / MAP TELCO.SUBSCRIBER, TARGET TELCO.SUBSCRIBER; / MAP TELCO.CDR_USAGE, TARGET TELCO.CDR_USAGE, KEYCOLS (CALL_ID);
+   KEYCOLS is needed because CDR_USAGE has no primary key.
+6. Smoke test of INSERT/UPDATE/DELETE: scripts/13_gg_smoke_test.sh, passing run in outputs/61_gg_smoke_test_clean.txt.
+7. Sync status during the 65-minute workload: docs/part1_gg_sync_report.md (scripts 14-16, outputs 62-66).
+
+Known design limit: the task forbids extra indexes on CDR_USAGE, GoldenGate warns that KEYCOLS should be indexed on the target, and the workload showed Replicat falling behind (see the report).
