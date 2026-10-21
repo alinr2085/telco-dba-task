@@ -1,0 +1,55 @@
+
+Session altered.
+
+== BEFORE cleanup: row counts and partitions
+
+SUBSCRIBER_ROWS
+---------------
+	 200000
+
+
+  CDR_ROWS
+----------
+   1680268
+
+
+CDR_PARTITIONS
+--------------
+	     4
+
+== workload jobs still present (expect none running)
+
+no rows selected
+
+== cleanup (README steps)
+
+User dropped.
+
+
+User dropped.
+
+
+Sequence dropped.
+
+
+Table truncated.
+
+
+Table truncated.
+
+== AFTER cleanup (expect zeros)
+
+SUBSCRIBER_ROWS
+---------------
+	      0
+
+
+  CDR_ROWS
+----------
+	 0
+
+
+USERS_LEFT
+----------
+	 0
+

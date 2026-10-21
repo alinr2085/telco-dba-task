@@ -1,0 +1,87 @@
+== 2026-10-21 01:38:02 UTC insert on SRC
+
+Session altered.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+== TGT after insert (expect 2 and 2)
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      2 	 2
+
+== update on SRC
+
+Session altered.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+Commit complete.
+
+== TGT after update (expect SUSPENDED and 9.9)
+
+Session altered.
+
+
+STATUS
+----------
+SUSPENDED
+
+
+CHARGE_AMT
+----------
+       9.9
+
+== delete on SRC
+
+Session altered.
+
+
+2 rows deleted.
+
+
+2 rows deleted.
+
+
+Commit complete.
+
+== counts after delete (expect 0 and 0 on both SRC and TGT)
+SRC:
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      0 	 0
+
+TGT:
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      0 	 0
+

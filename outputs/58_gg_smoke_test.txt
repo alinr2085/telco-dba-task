@@ -1,0 +1,85 @@
+== insert on SRC
+
+Session altered.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+== counts on TGT after insert (expect 2 and 2)
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      2 	 2
+
+== update on SRC
+
+Session altered.
+
+
+1 row updated.
+
+
+2 rows updated.
+
+
+Commit complete.
+
+== TGT after update (expect SUSPENDED and 9.9)
+
+Session altered.
+
+
+STATUS
+----------
+ACTIVE
+
+
+CHARGE_AMT
+----------
+       1.5
+
+== delete on SRC (cleanup, replicated too)
+
+Session altered.
+
+
+2 rows deleted.
+
+
+4 rows deleted.
+
+
+Commit complete.
+
+== counts SRC and TGT after delete (expect 0,0 on both)
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	 200000    1680268
+
+
+Session altered.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      2 	 2
+

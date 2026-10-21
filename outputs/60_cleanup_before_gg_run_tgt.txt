@@ -1,0 +1,14 @@
+
+Session altered.
+
+
+Table truncated.
+
+
+Table truncated.
+
+
+SUBSCRIBER_ROWS   CDR_ROWS
+--------------- ----------
+	      0 	 0
+
