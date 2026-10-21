@@ -1,6 +1,6 @@
 # Sources, search phrases, applied and rejected recommendations
 
-Searches were run with AI assistance (Claude); the cited pages were opened and read, except where marked "title only".
+Search phrases were proposed and run with AI assistance (Claude). I opened and read the cited pages myself and checked the conclusions against the lab output.
 
 ## Search phrases used
 - Oracle Database 23ai CURSOR_SHARING FORCE literal replacement bind variables reference

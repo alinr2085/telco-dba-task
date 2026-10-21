@@ -1,0 +1,7 @@
+== 2026-10-20 12:16:26 UTC (no VPN)
+== database image (control)
+Digest: sha256:f988b0c04c4c386cd306a2a914c0d7a9702d83acc31b064a28ad8eb6278a8fba
+Status: Image is up to date for container-registry.oracle.com/database/free:latest
+container-registry.oracle.com/database/free:latest
+== goldengate image
+Error response from daemon: unknown: failed to resolve reference "container-registry.oracle.com/goldengate/goldengate-free:latest": failed to authorize: failed to fetch anonymous token: unexpected status from GET request to https://container-registry.oracle.com/auth?scope=repository%3Agoldengate%2Fgoldengate-free%3Apull&service=Oracle+Registry: 401 Unauthorized

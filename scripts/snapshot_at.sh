@@ -21,7 +21,7 @@ fi
 {
   echo "=== SCRIPT START: $(date -u '+%Y-%m-%d %H:%M:%S UTC') ==="
   echo "=== TARGET TIME: ${TARGET_UTC} UTC ==="
-  sqlsrc <<'EOF'
+  MSYS_NO_PATHCONV=1 docker exec -i src-db sqlplus -s "/ as sysdba" <<'EOF'
 ALTER SESSION SET CONTAINER = FREEPDB1;
 SET PAGESIZE 100 LINESIZE 150
 EXEC DBMS_WORKLOAD_REPOSITORY.CREATE_SNAPSHOT();

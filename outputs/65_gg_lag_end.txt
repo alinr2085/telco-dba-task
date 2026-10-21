@@ -1,0 +1,28 @@
+Oracle GoldenGate Free Administration Client for Oracle
+Version 23.26.3.0.6 Free OGGCORE_23.26.3.0.0OGGRU_LINUX.X64_260911.1206_FBO
+
+Copyright (C) 1995, 2026, Oracle and/or its affiliates. All rights reserved.
+
+Linux, x64, 64bit (optimized) on Sep 11 2026 18:14:59
+Operating system character set identified as US-ASCII.
+
+Using default deployment 'Local'
+
+OGG (http://localhost:8080 Local) 2> LAG EXTRACT EXT1
+Lag from heartbeat table requires DBLOGIN.
+
+Sending GETLAG request to Extract group EXT1 ...
+
+Last record lag 1 seconds.
+
+
+OGG (http://localhost:8080 Local) 3> LAG REPLICAT REP1
+Lag from heartbeat table requires DBLOGIN.
+
+Sending GETLAG request to Replicat group REP1 ...
+
+Low watermark lag: 2319 seconds
+High watermark lag: 2306 seconds
+
+
+

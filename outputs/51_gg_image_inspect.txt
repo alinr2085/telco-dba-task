@@ -1,0 +1,4 @@
+env=PATH=/usr/java/jdk-17/bin:/u01/ogg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin | GG_TYPE=oracle | pypi=https://artifactory.oci.oraclecorp.com/api/pypi/global-release-pypi/simple | pypi_host=artifactory.oci.oraclecorp.com | OGG_HOME=/u01/ogg | OGG_DEPLOYMENT_HOME=/u02 | OGG_TEMPORARY_FILES=/u03 | OGG_DEPLOYMENT_SCRIPTS=/u01/ogg/scripts | JAVA_HOME=/usr/java/jdk-17 | JAVA_VERSION=17.35 | 
+ports=map[8080/tcp:{} 8443/tcp:{}]
+volumes=map[/u01/ogg/scripts:{} /u02:{} /u03:{}]
+cmd=[] entry=[/usr/local/bin/deployment-main.sh]
