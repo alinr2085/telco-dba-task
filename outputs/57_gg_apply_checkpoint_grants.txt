@@ -1,0 +1,21 @@
+
+Session altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+== check
+
+PRIVILEGE
+----------------------------------------
+CREATE TABLE
+CREATE SESSION
+
+
+TABLESPACE_NAME 		 QUOTA_MB
+------------------------------ ----------
+USERS				       50
+
