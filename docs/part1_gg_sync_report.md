@@ -39,3 +39,7 @@ CDR_USAGE has no index (task rule), so each UPDATE/DELETE applied on the target 
 - An index or unique key on CALL_ID on TGT only (needs approval, the task forbids extra indexes on CDR_USAGE).
 - More apply threads for the Parallel Replicat.
 - Re-test with a lower update rate to find the sustainable rate.
+
+## Screenshots
+- outputs/68_gg_status_start_EXT1.png, outputs/69_gg_status_start_REP1.png: both processes Running at the start of the load.
+- outputs/70_gg_replicat_stats_no_index.png: Replicat statistics counting updates/deletes on tables without a unique index.
