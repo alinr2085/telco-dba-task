@@ -1,0 +1,81 @@
+2026-10-21 02:53:55  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:53:55  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:54:57  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:54:57  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:55:58  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:55:58  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:57:01  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:57:01  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:57:11  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:57:11  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:58:03  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:58:03  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 02:59:05  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:59:05  INFO    OGG-01680  Last record lag 1 seconds.
+2026-10-21 03:00:07  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:00:07  INFO    OGG-01680  Last record lag 2 seconds.
+2026-10-21 03:00:09  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:00:09  INFO    OGG-01680  Last record lag 2 seconds.
+2026-10-21 03:01:09  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:01:09  INFO    OGG-01680  Last record lag 2 seconds.
+At EOF, no more records to process.
+2026-10-21 03:02:12  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:02:12  INFO    OGG-01680  Last record lag 5 seconds.
+At EOF, no more records to process.
+2026-10-21 03:03:15  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:03:15  INFO    OGG-01680  Last record lag 4 seconds.
+At EOF, no more records to process.
+2026-10-21 03:04:00  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:04:00  INFO    OGG-01680  Last record lag 4 seconds.
+At EOF, no more records to process.
+2026-10-21 03:04:16  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:04:16  INFO    OGG-01680  Last record lag 4 seconds.
+At EOF, no more records to process.
+2026-10-21 03:05:21  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:05:21  INFO    OGG-01680  Last record lag 4 seconds.
+At EOF, no more records to process.
+2026-10-21 03:06:23  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:06:23  INFO    OGG-01680  Last record lag 5 seconds.
+At EOF, no more records to process.
+VIEW REPORT EXT1
+----
+2026-10-21 02:31:01  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:32:08  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:33:12  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:34:15  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:35:17  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:36:19  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:36:25  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:37:21  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:38:22  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:39:25  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:40:27  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:41:29  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:42:31  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:43:33  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:44:36  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:45:38  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:46:40  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:47:42  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:48:44  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:49:46  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:50:48  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:51:49  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:52:53  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:53:55  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:54:57  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:55:58  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:57:01  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:57:11  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:58:03  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 02:59:05  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:00:07  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:00:09  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:01:09  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:02:12  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:03:15  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:04:00  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:04:16  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:05:21  INFO    OGG-01021  Command received from application REST API: GETLAG.
+2026-10-21 03:06:23  INFO    OGG-01021  Command received from application REST API: GETLAG.
+VIEW REPORT REP1

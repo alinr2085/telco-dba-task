@@ -1,0 +1,50 @@
+Environment verification, 2026-10-22 10:04:26 UTC
+== Containers
+PASS  container src-db is running
+PASS  container tgt-db is running
+PASS  container gg is running
+== SRC database settings
+PASS  SRC is in ARCHIVELOG mode
+PASS  SRC FRA size is 8 GiB
+PASS  SRC has 3 redo groups of 50 MB
+== src-db: schema, security
+PASS  src-db: TELCO has SUBSCRIBER and CDR_USAGE
+PASS  src-db: CDR_USAGE is interval-partitioned
+PASS  src-db: partition key is CALL_START
+PASS  src-db: CDR_USAGE has no primary or unique key
+PASS  src-db: SUBSCRIBER has a primary key
+PASS  src-db: no index except the SUBSCRIBER primary key
+PASS  src-db: a profile with a failed-login limit exists
+PASS  src-db: failed-logon audit policy enabled (root + PDB)
+INFO  src-db: Oracle-maintained accounts still OPEN (review: should be only SYS/SYSTEM-like): SYS,SYSRAC
+== tgt-db: schema, security
+PASS  tgt-db: TELCO has SUBSCRIBER and CDR_USAGE
+PASS  tgt-db: CDR_USAGE is interval-partitioned
+PASS  tgt-db: partition key is CALL_START
+PASS  tgt-db: CDR_USAGE has no primary or unique key
+PASS  tgt-db: SUBSCRIBER has a primary key
+PASS  tgt-db: no index except the SUBSCRIBER primary key
+PASS  tgt-db: a profile with a failed-login limit exists
+PASS  tgt-db: failed-logon audit policy enabled (root + PDB)
+INFO  tgt-db: Oracle-maintained accounts still OPEN (review: should be only SYS/SYSTEM-like): SYS,SYSRAC
+== GoldenGate (informational: process state depends on whether they were started)
+Oracle GoldenGate Free Administration Client for Oracle
+Using default deployment 'Local'
+OGG (http://localhost:8080 Local) 2> INFO ALL
+Program     Status      Group       Type                   Lag at Chkpt       Time Since Chkpt 
+ADMINSRVR   RUNNING   
+DISTSRVR    RUNNING   
+PMSRVR      RUNNING   
+RECVSRVR    RUNNING   
+EXTRACT     ABENDED     EXT1        INTEGRATED                  00:00:04        1d:06:19:40    
+REPLICAT    ABENDED     REP1        PARALLEL NONINT             01:18:36        1d:06:19:35    
+OGG (http://localhost:8080 Local) 3> INFO CREDENTIALSTORE DOMAIN OracleGoldenGate
+Default domain: OracleGoldenGate
+  Alias: tgt_ggapply
+  Userid: ggapply@tgt-db:1521/FREEPDB1
+  Alias: src_ggcapture
+  Userid: ggcapture@src-db:1521/FREEPDB1
+== Row counts (informational)
+INFO  SRC CDR_USAGE rows: 1674507
+INFO  TGT CDR_USAGE rows: 793351
+== Result: 22 passed, 0 failed
