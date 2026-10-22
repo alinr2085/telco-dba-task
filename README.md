@@ -16,6 +16,8 @@ Start with `docs/part1_setup.md` (how it was built), `docs/part2_awr_analysis.md
 ## Architecture
 ![architecture](diagrams/architecture.png)
 
+[Open the full-size diagram](diagrams/architecture.png) or the editable [SVG](diagrams/architecture.svg).
+
 Three containers on the Docker network `telco-net`: `src-db` and `tgt-db` (Oracle) and `gg` (GoldenGate). Extract `EXT1` (Integrated) reads the redo of SRC as the least-privilege user `GGCAPTURE`, writes trail `aa`, and Replicat `REP1` (Parallel) applies it to TGT as `GGAPPLY`. The replication is one-way, and GoldenGate never uses SYS or SYSTEM.
 
 ## Part 1: environment
